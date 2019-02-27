@@ -2,7 +2,7 @@
 
 Download het exe bestand: [FuglenRekentrainer.exe](https://esstudio.site/inzendopgaven_418U15/out/exe/FuglenRekentrainer.exe)
 
-Download het exe bestand als een zip: [FuglenRekentrainer.exe](https://esstudio.site/inzendopgaven_418U15/out/exe/FuglenRekentrainer.zip)
+Download het exe bestand als een zip: [FuglenRekentrainer.zip](https://esstudio.site/inzendopgaven_418U15/out/exe/FuglenRekentrainer.zip)
 
 ## Vereisten
 
