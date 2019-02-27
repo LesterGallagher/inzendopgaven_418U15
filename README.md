@@ -28,5 +28,5 @@ De documentatie voor dit project is [hier](https://esstudio.site/inzendopgaven_4
 
 ## Applicatie vrijgeven
 
-Run de "deploy" Ant task
+Run de "deploy" Ant task.
 
