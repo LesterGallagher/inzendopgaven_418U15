@@ -11,4 +11,6 @@
 hs_err_pid*
 ## De volgende lijn zo eigenlijk uncommented moeten zijn. Secrets mogen niet op git.
 # secret.properties
-out/
+out/production
+out/jar
+out/artifacts
