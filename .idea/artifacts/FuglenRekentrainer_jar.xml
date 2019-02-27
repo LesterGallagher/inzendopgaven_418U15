@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="FuglenRekentrainer:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/FuglenRekentrainer_jar</output-path>
+    <root id="archive" name="FuglenRekentrainer.jar">
+      <element id="module-output" name="FuglenRekentrainer" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/jsign-2.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,35 @@
+<project name="FuglenRekentrainer" basedir=".">
+    <description>
+        simple example build file
+    </description>
+    <!-- set global properties for this build -->
+    <property name="src" location="src"/>
+    <property name="jar" location="out/artifacts/FuglenRekentrainer_jar"/>
+    <property name="exe" location="out/exe"/>
+    <property name="out" location="out"/>
+    <property file="secret.properties" prefix="secret" prefixValues="false" />
+
+    <property name="launch4j.dir" location="/opt/launch4j" />
+
+    <target name="deploy"
+            description="get ready for deployment">
+
+        <signjar storetype="pkcs12" keystore=".keystore" storepass="${secret.password}"
+                 alias="Rekentrainer" jar="${jar}/FuglenRekentrainer.jar" />
+
+        <mkdir dir="${exe}"/>
+        <exec executable="launch4jc">
+            <arg line="l4j.xml"/>
+        </exec>
+
+        <exec executable="sign4j">
+            <arg line="java -jar jsign-2.1.jar -s .keystore -a Rekentrainer --storepass ${secret.password} --storetype pkcs12 out/exe/FuglenRekentrainer.exe"/>
+        </exec>
+    </target>
+
+    <target name="clean"
+            description="clean up">
+        <delete dir="${out}"/>
+    </target>
+
+</project>
