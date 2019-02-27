@@ -8,6 +8,7 @@ Download het exe bestand als een zip: [FuglenRekentrainer.zip](https://esstudio.
 
 - java versie "1.8" of later
 - Java(TM) SE Runtime Environment "1.8" of later
+- Apache Ant
 
 ## Installatie instructies
 
@@ -25,5 +26,7 @@ Documentatie voor jsign: [https://ebourg.github.io/jsign](http://launch4j.source
 
 De documentatie voor dit project is [hier](https://esstudio.site/inzendopgaven_418U15/java-doc) te vinden.
 
+## Applicatie vrijgeven
 
+Run de "deploy" Ant task
 
