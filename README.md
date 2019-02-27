@@ -3,7 +3,7 @@
 ## Getting Started
 
 1. ```shell
-    git  clone
+    git clone
 ```
 
 1. Install launch4j and add it to the PATH (https://sourceforge.net/projects/launch4j/files/launch4j-3/3.12)
