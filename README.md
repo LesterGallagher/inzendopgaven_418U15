@@ -1,5 +1,7 @@
 # Rekentrainer voor jenaplanbasisschool De Fuglen.
 
+Download het exe bestand: https://esstudio.site/inzendopgaven_418U15/out/exe/FuglenRekentrainer.exe
+
 ## Vereisten
 
 - java versie "1.8" of later
