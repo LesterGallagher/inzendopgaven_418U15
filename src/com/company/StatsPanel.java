@@ -65,4 +65,12 @@ public class StatsPanel extends JPanel {
     public int getTodoAmount() {
         return todoAmount;
     }
+
+    public int getMistakes() {
+        return mistakesAmount;
+    }
+
+    public int getDone() {
+        return doneAmount;
+    }
 }

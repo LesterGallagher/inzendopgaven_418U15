@@ -73,6 +73,7 @@ public abstract class OefeningFrame extends JFrame {
         contentPane.remove(questionPane);
         contentPane.remove(resultPane);
         contentPane.remove(statsPanel);
+        finalStats.init(statsPanel);
         contentPane.add(finalStats);
         setTitle("Rekentrainer - Resultaat " + StartScreen.getUserName());
         revalidate();
@@ -119,6 +120,6 @@ public abstract class OefeningFrame extends JFrame {
         contentPane.add(statsPanel, BorderLayout.SOUTH);
         setTitle(operationName + " - Groep " + GroepPanel.group);
 
-        renderQuestion();
+        newQuestion();
     }
 }

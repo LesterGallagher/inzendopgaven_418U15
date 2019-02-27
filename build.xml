@@ -14,6 +14,12 @@
     <target name="deploy"
             description="get ready for deployment">
 
+        <jar destfile="${jar}/FuglenRekentrainer.jar" basedir=".">
+            <manifest>
+                <attribute name="Main-Class" value="com.company.Main"/>
+            </manifest>
+        </jar>
+
         <signjar storetype="pkcs12" keystore=".keystore" storepass="${secret.password}"
                  alias="Rekentrainer" jar="${jar}/FuglenRekentrainer.jar" />
 
@@ -25,6 +31,10 @@
         <exec executable="sign4j">
             <arg line="java -jar jsign-2.1.jar -s .keystore -a Rekentrainer --storepass ${secret.password} --storetype pkcs12 out/exe/FuglenRekentrainer.exe"/>
         </exec>
+
+        <zip destfile="${exe}/FuglenRekentrainer.zip"
+             includes="*.exe"
+             basedir="${exe}"/>
     </target>
 
     <target name="clean"

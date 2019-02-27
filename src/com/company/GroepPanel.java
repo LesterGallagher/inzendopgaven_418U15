@@ -6,7 +6,7 @@ import java.text.MessageFormat;
 
 public class GroepPanel extends JPanel {
 
-    static int group = -1;
+    static int group = 3;
     JLabel groepLabel = new JLabel("Kies je groep:");
 
     public GroepPanel() {
@@ -19,7 +19,7 @@ public class GroepPanel extends JPanel {
             var radio = new JRadioButton(
                     MessageFormat.format("Groep {0}", g)
             );
-            radio.addChangeListener(e -> group = g);
+            radio.addActionListener(e -> group = g);
             buttonGroup.add(radio);
             add(radio);
         }

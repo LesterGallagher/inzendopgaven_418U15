@@ -9,15 +9,13 @@ public class OptellenFrame extends OefeningFrame {
 
         operator = '+';
         operationName = "Optellen";
-        newQuestion();
     }
-
     /**
      * initialiseert een nieuwe vraag.
      */
     protected void newQuestion() {
-        this.firstArgument = ThreadLocalRandom.current().nextInt(1, 21);
-        this.secondArgument = ThreadLocalRandom.current().nextInt(1, 21);
+        this.firstArgument = ThreadLocalRandom.current().nextInt(1, 6 + (GroepPanel.getGroup() -3) * 13);
+        this.secondArgument = ThreadLocalRandom.current().nextInt(1, 3 + (GroepPanel.getGroup() - 3) * 11);
         this.answer = firstArgument + secondArgument;
 
         renderQuestion();

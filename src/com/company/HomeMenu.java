@@ -2,20 +2,9 @@ package com.company;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
-import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.nio.file.Paths;
 
 public class HomeMenu extends JMenuBar {
-    private JMenuItem menuItem;
-    private JRadioButtonMenuItem rbMenuItem;
-    private JCheckBoxMenuItem cbMenuItem;
-
     public HomeMenu(Home home) {
 
         add(Box.createHorizontalGlue());
@@ -31,6 +20,19 @@ public class HomeMenu extends JMenuBar {
             "Bekijk de documentatie");
         helpMenu.add(documentationMenu);
 
-        documentationMenu.addActionListener(new DocumentationClickActionListener(home));
+        documentationMenu.addActionListener(new LinkClickActionListener(
+                home,
+                "https://esstudio.site/inzendopgaven_418U15/java-doc/com/company/package-summary.html"
+        ));
+
+        JMenuItem websiteMenuItem = new JMenuItem("Website");
+        websiteMenuItem.getAccessibleContext().setAccessibleDescription(
+                "Bekijk de website");
+        helpMenu.add(websiteMenuItem);
+
+        websiteMenuItem.addActionListener(new LinkClickActionListener(
+                home,
+                "https://esstudio.site/inzendopgaven_418U15"
+        ));
     }
 }

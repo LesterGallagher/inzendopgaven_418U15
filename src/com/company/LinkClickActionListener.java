@@ -7,12 +7,14 @@ import java.awt.event.ActionListener;
 import java.nio.file.Paths;
 
 
-public class DocumentationClickActionListener implements ActionListener {
+public class LinkClickActionListener implements ActionListener {
 
     protected Home home;
+    protected String url;
 
-    public DocumentationClickActionListener(Home home) {
+    public LinkClickActionListener(Home home, String url) {
         this.home = home;
+        this.url = url;
     }
 
     /**
@@ -22,7 +24,7 @@ public class DocumentationClickActionListener implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
             try {
-                Desktop.getDesktop().browse(java.net.URI.create("https://esstudio.site/FuglenRekentrainer"));
+                Desktop.getDesktop().browse(java.net.URI.create(url));
             } catch (Exception ex) {
                 ex.printStackTrace();
             }

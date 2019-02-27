@@ -72,6 +72,14 @@ public class FinalStats extends JPanel {
         repeatBtn.requestFocus();
     }
 
+    public void init(StatsPanel stats) {
+        var done = stats.getDone();
+        var mistakes = stats.getMistakes();
+        this.aantalSommenGoedAmount.setText("" + done);
+        this.aantalSommenFoutAmount.setText("" + mistakes);
+        this.scoreAmount.setText(Math.round((float)done / (done + mistakes) * 100) + "%");
+    }
+
     private void fireOnRepeatEvent() {
         onRepeat.forEach(listener -> listener.actionPerformed(null));
     }

@@ -10,8 +10,6 @@ public class AftrekkenFrame extends OefeningFrame {
 
         operator = '-';
         operationName = "Aftrekken";
-
-        newQuestion();
     }
 
     /**
@@ -20,8 +18,8 @@ public class AftrekkenFrame extends OefeningFrame {
     protected void newQuestion() {
         this.getRootPane().setDefaultButton(this.nextButton);
         this.nextButton.requestFocus();
-        this.firstArgument = ThreadLocalRandom.current().nextInt(1, 21);
-        this.secondArgument = ThreadLocalRandom.current().nextInt(1, 21);
+        this.firstArgument = ThreadLocalRandom.current().nextInt(1, 6 + (GroepPanel.getGroup() -3) * 20);
+        this.secondArgument = ThreadLocalRandom.current().nextInt(1, 6 + (GroepPanel.getGroup() - 3) * 20);
 
         if (firstArgument < secondArgument) {
             // draai de waarden om zonder een extra variabel te gebruiken...
