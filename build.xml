@@ -1,6 +1,6 @@
 <project name="FuglenRekentrainer" basedir=".">
     <description>
-        simple example build file
+        De build file voor de rekentrainer.
     </description>
     <!-- set global properties for this build -->
     <property name="src" location="src"/>
@@ -11,7 +11,7 @@
 
     <property name="launch4j.dir" location="/opt/launch4j" />
 
-    <target name="deploy"
+    <target depends="clean" name="deploy"
             description="get ready for deployment">
 
         <jar destfile="${jar}/FuglenRekentrainer.jar" basedir=".">
@@ -33,13 +33,15 @@
         </exec>
 
         <zip destfile="${exe}/FuglenRekentrainer.zip"
-             includes="*.exe"
+             excludes="**/*.zip"
+             includes="FuglenRekentrainer.exe"
              basedir="${exe}"/>
     </target>
 
     <target name="clean"
             description="clean up">
-        <delete dir="${out}"/>
+        <delete dir="${jar}" />
+        <delete dir="${exe}" />
     </target>
 
 </project>

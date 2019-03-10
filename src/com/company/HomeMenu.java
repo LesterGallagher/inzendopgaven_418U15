@@ -1,18 +1,30 @@
 package com.company;
 
 import javax.swing.*;
-import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 
 public class HomeMenu extends JMenuBar {
     public HomeMenu(Home home) {
 
+        JMenuItem logMenuItem = new JMenuItem("Logboek");
+        logMenuItem.setMnemonic(KeyEvent.VK_L);
+        logMenuItem.getAccessibleContext().setAccessibleDescription(
+                "Bekijk het logboek");
+        logMenuItem.addActionListener(e -> {
+            LogOverviewFrame logOverviewFrame = new LogOverviewFrame();
+            logOverviewFrame.setVisible(true);
+        });
+        logMenuItem.setMaximumSize( logMenuItem.getPreferredSize() );
+        add(logMenuItem);
+
         add(Box.createHorizontalGlue());
+
         JMenu helpMenu = new JMenu("Help");
         helpMenu.setMnemonic(KeyEvent.VK_H);
         helpMenu.getAccessibleContext().setAccessibleDescription(
             "Bekijk het help menu");
-        helpMenu.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);
         add(helpMenu);
 
         JMenuItem documentationMenu = new JMenuItem("Documentatie");
@@ -34,5 +46,7 @@ public class HomeMenu extends JMenuBar {
                 home,
                 "https://esstudio.site/inzendopgaven_418U15"
         ));
+
+
     }
 }

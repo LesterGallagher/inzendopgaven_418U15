@@ -16,6 +16,7 @@ public class Home extends JFrame {
     protected AftrekkenFrame aftrekkenFrame = new AftrekkenFrame();
     protected VermenigvuldigenFrame vermenigvuldigenFrame = new VermenigvuldigenFrame();
     protected DelenFrame delenFrame = new DelenFrame();
+    protected WillekeurigFrame willekeurigFrame = new WillekeurigFrame();
     protected JLabel amountOfSums = new JLabel("Hoeveel sommen wil je maken?");
     protected JTextField amountOfSumsField = new JTextField("20");
     private static int rotations = 20;
@@ -59,6 +60,7 @@ public class Home extends JFrame {
         addButton("/aftrekken.png", new HomeButtonClickActionListener(aftrekkenFrame));
         addButton("/vermenigvuldigen.png", new HomeButtonClickActionListener(vermenigvuldigenFrame));
         addButton("/delen.png", new HomeButtonClickActionListener(delenFrame));
+        addButton("/willekeurig.png", new HomeButtonClickActionListener(willekeurigFrame));
 
         contentPane.add(buttonPane, BorderLayout.SOUTH);
 

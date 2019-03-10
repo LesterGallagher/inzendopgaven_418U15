@@ -5,12 +5,11 @@
 *.war
 *.nar
 *.ear
-*.zip
-*.tar.gz
-*.rar
+*.cer
 hs_err_pid*
-## De volgende lijn zo eigenlijk uncommented moeten zijn. Secrets mogen niet op git.
+### De volgende lijn zou eigenlijk uncommented moeten zijn. Secrets mogen niet op git.
 # secret.properties
 out/production
 out/jar
 out/artifacts
+FuglenRekenTrainerSesssies.txt

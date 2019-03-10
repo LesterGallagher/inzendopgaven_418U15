@@ -3,6 +3,10 @@ package com.company;
 import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.util.Date;
+import java.util.concurrent.ThreadLocalRandom;
 
 public abstract class OefeningFrame extends JFrame {
 
@@ -10,6 +14,7 @@ public abstract class OefeningFrame extends JFrame {
     protected int secondArgument;
     protected int answer;
     protected char operator;
+    protected int userAnswer;
     protected String operationName;
 
     protected JTextField answerTextField = new JTextField("", 20);
@@ -23,6 +28,7 @@ public abstract class OefeningFrame extends JFrame {
     protected StatsPanel statsPanel = new StatsPanel();
     protected JLabel headerLabel = new JLabel();
     protected FinalStats finalStats = new FinalStats(this);
+    protected RekenTrainSessie sessie = new RekenTrainSessie();
 
     public OefeningFrame() {
         setSize(600, 460);
@@ -52,21 +58,48 @@ public abstract class OefeningFrame extends JFrame {
         this.getRootPane().setDefaultButton(answerButton);
         answerButton.requestFocus();
 
-        finalStats.addOnRepeatListener(e -> init());
+        finalStats.addOnRepeatListener(e -> restart());
 
         add(contentPane);
+
+        this.addWindowListener(new WindowAdapter(){
+            @Override
+            public void windowClosing(WindowEvent e) {
+                persist();
+            }
+        });
     }
 
     private void processAnswerToQuestion() {
         try {
-            int userAnswer = Integer.parseInt(answerTextField.getText());
-            statsPanel.decrementTodo();
-            if (statsPanel.getTodoAmount() <= 0) {
-                renderFinalStats();
-            } else {
-                renderAnswer(userAnswer);
-            }
-        } catch(NumberFormatException err) {}
+            this.userAnswer = Integer.parseInt(answerTextField.getText());
+        }   catch(NumberFormatException err) {
+            JOptionPane.showMessageDialog(null, '"' + answerTextField.getText()
+                    + "\" is geen geldig heel getal.");
+            return;
+        }
+        statsPanel.decrementTodo();
+        renderAnswer();
+        sessie.push(this);
+        if (statsPanel.getTodoAmount() <= 0) {
+            renderFinalStats();
+        }
+    }
+
+    private void restart() {
+        persist();
+
+        init();
+    }
+
+    private void persist() {
+        if (statsPanel.getDone() + statsPanel.getMistakes() == 0) return;
+        sessie.stop(
+                statsPanel.getDone(),
+                statsPanel.getMistakes(),
+                statsPanel.getTodoAmount(),
+                statsPanel.getPercentage(),
+                statsPanel.getTimeInSeconds());
     }
 
     protected void renderFinalStats() {
@@ -92,7 +125,7 @@ public abstract class OefeningFrame extends JFrame {
         repaint();
     }
 
-    protected void renderAnswer(int userAnswer) {
+    protected void renderAnswer() {
         boolean correct = userAnswer == answer;
         if (correct) {
             resultLabel.setText("Goed gedaan!");
@@ -115,11 +148,52 @@ public abstract class OefeningFrame extends JFrame {
         statsPanel
                 .setDone(0)
                 .setMistakes(0)
+                .setDate(new Date())
                 .setTodo(Home.getRotations());
         contentPane.remove(finalStats);
         contentPane.add(statsPanel, BorderLayout.SOUTH);
         setTitle(operationName + " - Groep " + GroepPanel.group);
-
+        sessie.operationName = operationName;
         newQuestion();
+    }
+
+    protected void initOptellenQuestion() {
+        this.firstArgument = ThreadLocalRandom.current().nextInt(1, 6 + (GroepPanel.getGroup() -3) * 13);
+        this.secondArgument = ThreadLocalRandom.current().nextInt(1, 3 + (GroepPanel.getGroup() - 3) * 11);
+        this.answer = this.firstArgument + this.secondArgument;
+    }
+
+    protected void initVermenigvuldigenQuestion() {
+        this.firstArgument = ThreadLocalRandom.current().nextInt(1, 4 + (GroepPanel.getGroup() -3) * 4);
+        this.secondArgument = ThreadLocalRandom.current().nextInt(1, 3 + (GroepPanel.getGroup() -3) * 3);
+        this.answer = this.firstArgument * this.secondArgument;
+    }
+
+    protected void initDelenQuestion() {
+        int a = ThreadLocalRandom.current().nextInt(2, 1 + GroepPanel.getGroup());
+        int b = ThreadLocalRandom.current().nextInt(2, 1 + GroepPanel.getGroup());
+        int r = a * b;
+
+        this.firstArgument = r;
+        this.secondArgument = b;
+        this.answer = a;
+    }
+
+    protected void initAftrekkenQuestion() {
+        this.getRootPane().setDefaultButton(this.nextButton);
+        this.nextButton.requestFocus();
+        this.firstArgument = ThreadLocalRandom.current().nextInt(1, 6 + (GroepPanel.getGroup() -3) * 20);
+        this.secondArgument = ThreadLocalRandom.current().nextInt(1, 6 + (GroepPanel.getGroup() - 3) * 20);
+
+        if (this.firstArgument < this.secondArgument) {
+            // draai de waarden om zonder een extra variabel te gebruiken...
+            this.firstArgument += this.secondArgument;
+            this.secondArgument = this.firstArgument - this.secondArgument;
+            this.firstArgument -= this.secondArgument;
+        }
+        // zorgt ervoor dat het resultaat nooit nul kan zijn.
+        this.firstArgument += 1;
+
+        this.answer = this.firstArgument - this.secondArgument;
     }
 }

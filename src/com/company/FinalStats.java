@@ -77,7 +77,7 @@ public class FinalStats extends JPanel {
         var mistakes = stats.getMistakes();
         this.aantalSommenGoedAmount.setText("" + done);
         this.aantalSommenFoutAmount.setText("" + mistakes);
-        this.scoreAmount.setText(Math.round((float)done / (done + mistakes) * 100) + "%");
+        this.scoreAmount.setText(stats.getPercentage() + "%");
     }
 
     private void fireOnRepeatEvent() {
