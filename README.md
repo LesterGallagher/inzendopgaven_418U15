@@ -42,7 +42,7 @@ Documentatie voor jsign: [https://ebourg.github.io/jsign](http://launch4j.source
 ## Foutopsporing
 
 #### error: Could not find or load main class com.company.Main:
-Probeer het project opnieuw te bouwen. In intelliJ: Build -> Rebuild Project. En Build -> Build Artifacts.
+Probeer het project opnieuw te bouwen. In intelliJ: Build -> Rebuild Project en Build -> Build Artifacts.
 
 Als dat niet werkt: [stackoverflow](https://stackoverflow.com/questions/10654120/error-could-not-find-or-load-main-class-in-intellij-ide)
 
