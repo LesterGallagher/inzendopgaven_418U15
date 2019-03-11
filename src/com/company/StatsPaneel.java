@@ -3,6 +3,9 @@ package com.company;
 import javax.swing.*;
 import java.util.Date;
 
+/**
+ * @author Sem Postma
+ */
 public class StatsPanel extends JPanel {
     private JLabel todo = new JLabel();
     private JLabel done = new JLabel();
@@ -23,10 +26,9 @@ public class StatsPanel extends JPanel {
         this
                 .setMistakes(0)
                 .setTodo(0)
-                .setDone(Home.getRotations());
+                .setDone(StartFrame.getRotations());
 
     }
-
 
 
     public StatsPanel decrementTodo() {
@@ -53,18 +55,6 @@ public class StatsPanel extends JPanel {
         return this;
     }
 
-    public StatsPanel setDone(int value) {
-        done.setText("Aantal opdrachten tot nu toe goed: " + value);
-        doneAmount = value;
-        return this;
-    }
-
-    public StatsPanel setMistakes(int value) {
-        mistakes.setText("Aantal opdrachten tot nu toe fout: " + value);
-        mistakesAmount = value;
-        return this;
-    }
-
     public StatsPanel setDate(Date date) {
         this.startDate = date;
         return this;
@@ -78,7 +68,13 @@ public class StatsPanel extends JPanel {
         return mistakesAmount;
     }
 
-    public long getTimeInSeconds () {
+    public StatsPanel setMistakes(int value) {
+        mistakes.setText("Aantal opdrachten tot nu toe fout: " + value);
+        mistakesAmount = value;
+        return this;
+    }
+
+    public long getTimeInSeconds() {
         return (new Date().getTime() - startDate.getTime()) / 1000;
     }
 
@@ -86,7 +82,13 @@ public class StatsPanel extends JPanel {
         return doneAmount;
     }
 
+    public StatsPanel setDone(int value) {
+        done.setText("Aantal opdrachten tot nu toe goed: " + value);
+        doneAmount = value;
+        return this;
+    }
+
     public int getPercentage() {
-        return Math.round((float)doneAmount / (doneAmount + mistakesAmount) * 100);
+        return Math.round((float) doneAmount / (doneAmount + mistakesAmount) * 100);
     }
 }

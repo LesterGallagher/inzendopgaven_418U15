@@ -1,24 +1,39 @@
 package com.company;
 
 import javax.swing.*;
-import javax.swing.border.Border;
-import javax.swing.border.CompoundBorder;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.awt.event.WindowEvent;
 
+/**
+ * Het start scherm van de applicatie.
+ * Hier vult de leerling zijn of haar naam in.
+ * @author Sem Postma
+ */
 public class StartScreen extends JFrame {
 
+    /**
+     * De naam van de leerling.
+     */
     private static String name = "";
 
+    /**
+     * De label met het bericht om de naam in te vullen.
+     */
     private JLabel headerLabel = new JLabel("Vul hieronder je naam in om de rekentrainer te starten.");
+    /**
+     * Het tekst veld met de naam van de leerling.
+     */
     private JTextField naamField = new JTextField("Jouw naam...");
+    /**
+     * De knop om de rekentrainer te starten.
+     */
     private JButton startButton = new JButton("Start");
 
     public StartScreen() {
         setTitle("Start Scherm");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setIconImage(new AppIcon("/icon.png").getImage());
+        setIconImage(new AppIcoontje("/icon.png").getImage());
         setResizable(false);
 
         var panel = new JPanel();
@@ -44,13 +59,19 @@ public class StartScreen extends JFrame {
         setLocationRelativeTo(null);
     }
 
-    public static String getUserName() { return name; }
+    /**
+     * Deze methode verkrijgt de naam van de leerling.
+     * @return De naam van de leerling
+     */
+    public static String getUserName() {
+        return name;
+    }
 
     private void showMenu() {
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         name = naamField.getText();
         this.dispatchEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
-        var home = new Home();
+        var home = new StartFrame();
         home.setVisible(true);
     }
 }

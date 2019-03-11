@@ -1,20 +1,28 @@
 package com.company;
 
 import javax.swing.*;
-import java.awt.*;
 import java.text.MessageFormat;
 
+/**
+ * @author Sem Postma
+ */
 public class GroepPanel extends JPanel {
 
-    static int group = 3;
-    JLabel groepLabel = new JLabel("Kies je groep:");
+    /**
+     * Het statische variabel voor de groep van de leerling.
+     */
+    private static int group = 3;
+    /**
+     * De label "Kies je groep:" label.
+     */
+    private JLabel groepLabel = new JLabel("Kies je groep:");
 
     public GroepPanel() {
         groepLabel.setFont(groepLabel.getFont().deriveFont(20.0f));
         this.add(groepLabel);
         this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
         ButtonGroup buttonGroup = new ButtonGroup();
-        for(int i = 3; i <= 8; i++) {
+        for (int i = 3; i <= 8; i++) {
             int g = i;
             var radio = new JRadioButton(
                     MessageFormat.format("Groep {0}", g)
@@ -28,6 +36,10 @@ public class GroepPanel extends JPanel {
         repaint();
     }
 
+    /**
+     * Krijgt de groep van de leerling. De standaard waarde is 3.
+     * @return De groep van de leerling
+     */
     public static int getGroup() {
         return group;
     }

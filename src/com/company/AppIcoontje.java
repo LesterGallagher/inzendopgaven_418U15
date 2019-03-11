@@ -5,7 +5,13 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 
+/**
+ * @author Sem Postma
+ */
 public class AppIcon {
+    /**
+     * De naam van de afbeelding in de resources folder.
+     */
     protected String imageName;
 
     public AppIcon(String imageName) {
@@ -13,10 +19,10 @@ public class AppIcon {
     }
 
     /**
-     * Gets a buffered image from a resource name.
+     * Krijgt een buffered afbeelding van een resource naam.
      *
-     * @return      The buffered image
-    */
+     * @return De buffered afbeelding
+     */
     public BufferedImage getImage() {
         try {
             BufferedImage img = ImageIO.read(getClass().getResource(imageName));
@@ -32,27 +38,27 @@ public class AppIcon {
     }
 
     /**
-     * Gets a resized image from a resource name.
+     * Krijgt een verkleinde afbeelding van een resource naam.
      *
-     * @return      The buffered image
+     * @return De buffered afbeelding
      */
     public Image getImage(int width, int height) {
-        return getImage().getScaledInstance( width, height,  java.awt.Image.SCALE_SMOOTH ) ;
+        return getImage().getScaledInstance(width, height, java.awt.Image.SCALE_SMOOTH);
     }
 
     /**
-     * Gets an icon from a resource name.
+     * Krijgt een icoontje van een resource naam.
      *
-     * @return      The buffered image
-    */
+     * @return Het icoontje
+     */
     public ImageIcon getIcon() {
         return new ImageIcon(getImage());
     }
 
     /**
-     * Gets an icon with the specified width and height from a resource name.
+     * Krijgt een icoontje met de gespecificeerde breedte en hoogte van een resource naam.
      *
-     * @return      The buffered image
+     * @return Het icoontje
      */
     public ImageIcon getIcon(int width, int height) {
         return new ImageIcon(getImage(width, height));

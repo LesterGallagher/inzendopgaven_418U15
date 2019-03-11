@@ -1,9 +1,11 @@
 package com.company;
 
-import javax.swing.*;
-import java.awt.event.*;
-import java.util.logging.Logger;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
+/**
+ * @author Sem Postma
+ */
 public class HomeButtonClickActionListener implements ActionListener {
     protected OefeningFrame frame;
 
@@ -13,7 +15,7 @@ public class HomeButtonClickActionListener implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-       System.out.println(e.toString());
+        System.out.println(e.toString());
         frame.setVisible(true);
         frame.init();
     }

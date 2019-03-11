@@ -1,15 +1,16 @@
 package com.company;
+
 import javax.swing.*;
 import javax.swing.border.Border;
-import javax.swing.event.DocumentEvent;
-import javax.swing.event.DocumentListener;
 import java.awt.*;
 import java.awt.event.ActionListener;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
 
+/**
+ * @author Sem Postma
+ */
 public class Home extends JFrame {
 
+    private static int rotations = 20;
     protected JPanel contentPane = new JPanel(new BorderLayout());
     protected JPanel buttonPane = new JPanel();
     protected OptellenFrame optellenFrame = new OptellenFrame();
@@ -19,14 +20,13 @@ public class Home extends JFrame {
     protected WillekeurigFrame willekeurigFrame = new WillekeurigFrame();
     protected JLabel amountOfSums = new JLabel("Hoeveel sommen wil je maken?");
     protected JTextField amountOfSumsField = new JTextField("20");
-    private static int rotations = 20;
 
     public Home() {
         setTitle("Rekentrainer Keuze scherm");
         setSize(900, 600);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setIconImage(new AppIcon("/icon.png").getImage());
+        setIconImage(new AppIcoontje("/icon.png").getImage());
         setJMenuBar(new HomeMenu(this));
 
         Border padding = BorderFactory.createEmptyBorder(10, 10, 10, 10);
@@ -48,7 +48,8 @@ public class Home extends JFrame {
         amountOfSumsField.getDocument().addDocumentListener(new JTextFieldDocumentChangeListener(e -> {
             try {
                 rotations = Integer.parseInt(amountOfSumsField.getText());
-            } catch(NumberFormatException err) {}
+            } catch (NumberFormatException err) {
+            }
         }));
         boxPane.add(Box.createVerticalStrut(20));
         contentPane.add(boxPane, BorderLayout.NORTH);
@@ -77,7 +78,7 @@ public class Home extends JFrame {
 
     protected void addButton(String imageName, ActionListener listener) {
         JButton btn = new JButton();
-        btn.setIcon(new AppIcon(imageName).getIcon());
+        btn.setIcon(new AppIcoontje(imageName).getIcon());
         btn.setContentAreaFilled(false);
         btn.setFocusable(false);
         btn.addActionListener(listener);

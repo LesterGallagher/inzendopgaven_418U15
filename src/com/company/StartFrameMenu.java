@@ -1,12 +1,13 @@
 package com.company;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 
+/**
+ * @author Sem Postma
+ */
 public class HomeMenu extends JMenuBar {
-    public HomeMenu(Home home) {
+    public HomeMenu(StartFrame home) {
 
         JMenuItem logMenuItem = new JMenuItem("Logboek");
         logMenuItem.setMnemonic(KeyEvent.VK_L);
@@ -16,7 +17,7 @@ public class HomeMenu extends JMenuBar {
             LogOverviewFrame logOverviewFrame = new LogOverviewFrame();
             logOverviewFrame.setVisible(true);
         });
-        logMenuItem.setMaximumSize( logMenuItem.getPreferredSize() );
+        logMenuItem.setMaximumSize(logMenuItem.getPreferredSize());
         add(logMenuItem);
 
         add(Box.createHorizontalGlue());
@@ -24,12 +25,12 @@ public class HomeMenu extends JMenuBar {
         JMenu helpMenu = new JMenu("Help");
         helpMenu.setMnemonic(KeyEvent.VK_H);
         helpMenu.getAccessibleContext().setAccessibleDescription(
-            "Bekijk het help menu");
+                "Bekijk het help menu");
         add(helpMenu);
 
         JMenuItem documentationMenu = new JMenuItem("Documentatie");
         documentationMenu.getAccessibleContext().setAccessibleDescription(
-            "Bekijk de documentatie");
+                "Bekijk de documentatie");
         helpMenu.add(documentationMenu);
 
         documentationMenu.addActionListener(new LinkClickActionListener(
