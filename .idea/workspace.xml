@@ -7,89 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e061cf64-2c78-4b77-9ddf-4483946220e7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FuglenRekenTrainerSessies.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FuglenRekenTrainerSessies.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/allclasses-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/allclasses.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/allclasses.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/allpackages-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/com/company/AftrekkenFrame.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/AftrekkenFrame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/com/company/AppIcon.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/AppIcon.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/com/company/DelenFrame.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/DelenFrame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/com/company/DocumentationClickActionListener.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/DocumentationClickActionListener.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/com/company/FinalStats.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/FinalStats.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/com/company/GroepPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/GroepPanel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/com/company/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/Home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/com/company/HomeButtonClickActionListener.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/HomeButtonClickActionListener.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/com/company/HomeMenu.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/HomeMenu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/com/company/JTextFieldDocumentChangeListener.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/JTextFieldDocumentChangeListener.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/com/company/LinkClickActionListener.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/LinkClickActionListener.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/com/company/LogItemFrame.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/LogItemFrame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/com/company/LogOverviewFrame.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/LogOverviewFrame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/com/company/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/Main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/com/company/OefeningFrame.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/OefeningFrame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/com/company/OptellenFrame.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/OptellenFrame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/com/company/RekenTrainSessie.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/RekenTrainSessie.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/com/company/RekenTrainSessieItem.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/RekenTrainSessieItem.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/com/company/StartScreen.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/StartScreen.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/com/company/StatsPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/StatsPanel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/com/company/VermenigvuldigenFrame.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/VermenigvuldigenFrame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/com/company/WillekeurigFrame.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/WillekeurigFrame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/com/company/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/com/company/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/constant-values.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/deprecated-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/help-doc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/index-files/index-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/index-files/index-10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/index-files/index-11.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/index-files/index-12.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/index-files/index-13.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/index-files/index-14.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/index-files/index-15.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/index-files/index-15.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/index-files/index-16.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/index-files/index-16.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/index-files/index-17.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/index-files/index-17.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/index-files/index-18.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/index-files/index-18.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/index-files/index-19.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/index-files/index-19.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/index-files/index-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/index-files/index-20.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/index-files/index-20.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/index-files/index-21.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/index-files/index-21.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/index-files/index-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/index-files/index-4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/index-files/index-5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/index-files/index-6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/index-files/index-7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/index-files/index-8.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/index-files/index-9.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/member-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/member-search-index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/member-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/member-search-index.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/package-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/package-search-index.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/serialized-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/serialized-form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/type-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/type-search-index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-doc/type-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/type-search-index.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/AftrekkenFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/MinSommenFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/AppIcon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/AppIcoontje.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/DelenFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/DelenFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/FinalStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/FinalStats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/GroepPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/GroepPaneel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/StartFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/HomeButtonClickActionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/StartFrameKnopKlikActionListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/HomeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/StartFrameMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/JTextFieldDocumentChangeListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/JTextFieldDocumentChangeListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/LinkClickActionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/LinkClickActionListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/LogItemFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/LogItemFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/LogOverviewFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/LogOverviewFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/OefeningFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/OefeningFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/OptellenFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/OptellenFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/RekenTrainSessie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/RekenTrainSessie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/RekenTrainSessieItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/RekenTrainSessieItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/StartScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/LoginScherm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/StatsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/StatsPaneel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/VermenigvuldigenFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/VermenigvuldigenFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/WillekeurigFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/WillekeurigFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/StatsPaneel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/StatsPaneel.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -159,18 +77,18 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/StatsPaneel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="9" column="41" lean-forward="true" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+            <state relative-caret-position="1649">
+              <caret line="113" column="57" selection-start-line="113" selection-start-column="57" selection-end-line="113" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1437#1438#0" expanded="true" />
-                <element signature="e#1470#1471#0" expanded="true" />
-                <element signature="e#1502#1503#0" expanded="true" />
-                <element signature="e#1539#1540#0" expanded="true" />
-                <element signature="e#1758#1759#0" expanded="true" />
-                <element signature="e#1832#1833#0" expanded="true" />
-                <element signature="e#1860#1861#0" expanded="true" />
-                <element signature="e#1893#1894#0" expanded="true" />
+                <element signature="e#1684#1685#0" expanded="true" />
+                <element signature="e#1725#1726#0" expanded="true" />
+                <element signature="e#1755#1756#0" expanded="true" />
+                <element signature="e#1795#1796#0" expanded="true" />
+                <element signature="e#2013#2014#0" expanded="true" />
+                <element signature="e#2088#2089#0" expanded="true" />
+                <element signature="e#2120#2121#0" expanded="true" />
+                <element signature="e#2162#2163#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -363,7 +281,7 @@
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="fuglenrekentrainer" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552308441035" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552309049262" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -461,14 +379,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49597314" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48255032" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4818792" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49530202" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49932885" weight="0.3286119" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50402683" side_tool="true" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5033557" side_tool="true" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49731544" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4966443" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4805369" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
@@ -763,18 +681,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/StatsPaneel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="41" lean-forward="true" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+        <state relative-caret-position="1649">
+          <caret line="113" column="57" selection-start-line="113" selection-start-column="57" selection-end-line="113" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1437#1438#0" expanded="true" />
-            <element signature="e#1470#1471#0" expanded="true" />
-            <element signature="e#1502#1503#0" expanded="true" />
-            <element signature="e#1539#1540#0" expanded="true" />
-            <element signature="e#1758#1759#0" expanded="true" />
-            <element signature="e#1832#1833#0" expanded="true" />
-            <element signature="e#1860#1861#0" expanded="true" />
-            <element signature="e#1893#1894#0" expanded="true" />
+            <element signature="e#1684#1685#0" expanded="true" />
+            <element signature="e#1725#1726#0" expanded="true" />
+            <element signature="e#1755#1756#0" expanded="true" />
+            <element signature="e#1795#1796#0" expanded="true" />
+            <element signature="e#2013#2014#0" expanded="true" />
+            <element signature="e#2088#2089#0" expanded="true" />
+            <element signature="e#2120#2121#0" expanded="true" />
+            <element signature="e#2162#2163#0" expanded="true" />
           </folding>
         </state>
       </provider>
