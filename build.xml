@@ -1,4 +1,4 @@
-<project name="FuglenRekentrainer" basedir=".">
+<project name="FuglenRekentrainer" basedir="." default="deploy">
     <description>
         De build file voor de rekentrainer.
     </description>
@@ -9,16 +9,9 @@
     <property name="out" location="out"/>
     <property file="secret.properties" prefix="secret" prefixValues="false" />
 
-    <property name="launch4j.dir" location="/opt/launch4j" />
-
-    <target depends="clean" name="deploy"
+    <target name="deploy"
             description="get ready for deployment">
-
-        <jar destfile="${jar}/FuglenRekentrainer.jar" basedir=".">
-            <manifest>
-                <attribute name="Main-Class" value="com.company.Main"/>
-            </manifest>
-        </jar>
+        <delete dir="${exe}" />
 
         <signjar storetype="pkcs12" keystore=".keystore" storepass="${secret.password}"
                  alias="Rekentrainer" jar="${jar}/FuglenRekentrainer.jar" />
@@ -36,12 +29,6 @@
              excludes="**/*.zip"
              includes="FuglenRekentrainer.exe"
              basedir="${exe}"/>
-    </target>
-
-    <target name="clean"
-            description="clean up">
-        <delete dir="${jar}" />
-        <delete dir="${exe}" />
     </target>
 
 </project>
