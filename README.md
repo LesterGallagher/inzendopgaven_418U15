@@ -4,6 +4,8 @@ Download het exe bestand: [FuglenRekentrainer.exe](https://esstudio.site/inzendo
 
 Download het exe bestand als een zip: [FuglenRekentrainer.zip](https://esstudio.site/inzendopgaven_418U15/out/exe/FuglenRekentrainer.zip)
 
+Download de source: [Source](https://github.com/LesterGallagher/inzendopgaven_418U15/zipball/master)
+
 ## Vereisten
 
 - java versie "1.8" of later
