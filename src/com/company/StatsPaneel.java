@@ -4,91 +4,92 @@ import javax.swing.*;
 import java.util.Date;
 
 /**
+ * Het paneel met een aantal statistieken over de sessie.
  * @author Sem Postma
  */
-public class StatsPanel extends JPanel {
-    private JLabel todo = new JLabel();
-    private JLabel done = new JLabel();
-    private JLabel mistakes = new JLabel();
+public class StatsPaneel extends JPanel {
+    private JLabel teMaken = new JLabel();
+    private JLabel afgerond = new JLabel();
+    private JLabel fouten = new JLabel();
 
-    private int todoAmount = -1;
-    private int doneAmount = -1;
-    private int mistakesAmount = -1;
+    private int teMakenHoeveelheid = -1;
+    private int afgerondHoeveelheid = -1;
+    private int foutenHoeveelheid = -1;
 
-    private Date startDate;
+    private Date startDatum;
 
-    public StatsPanel() {
+    public StatsPaneel() {
         setLayout(new BoxLayout(this, BoxLayout.PAGE_AXIS));
-        add(done);
-        add(mistakes);
-        add(todo);
+        add(afgerond);
+        add(fouten);
+        add(teMaken);
 
         this
-                .setMistakes(0)
-                .setTodo(0)
-                .setDone(StartFrame.getRotations());
+                .setFouten(0)
+                .setTeMaken(0)
+                .setAfgerond(StartFrame.getRotaties());
 
     }
 
 
-    public StatsPanel decrementTodo() {
-        todoAmount--;
-        setTodo(todoAmount);
+    public StatsPaneel decrementTodo() {
+        teMakenHoeveelheid--;
+        setTeMaken(teMakenHoeveelheid);
         return this;
     }
 
-    public StatsPanel incrementDone() {
-        doneAmount++;
-        setDone(doneAmount);
+    public StatsPaneel incrementDone() {
+        afgerondHoeveelheid++;
+        setAfgerond(afgerondHoeveelheid);
         return this;
     }
 
-    public StatsPanel incrementMistakes() {
-        mistakesAmount++;
-        setMistakes(mistakesAmount);
+    public StatsPaneel incrementMistakes() {
+        foutenHoeveelheid++;
+        setFouten(foutenHoeveelheid);
         return this;
     }
 
-    public StatsPanel setTodo(int value) {
-        todo.setText("Nog " + value + " opdrachten te maken");
-        todoAmount = value;
+    public StatsPaneel setTeMaken(int value) {
+        teMaken.setText("Nog " + value + " opdrachten te maken");
+        teMakenHoeveelheid = value;
         return this;
     }
 
-    public StatsPanel setDate(Date date) {
-        this.startDate = date;
+    public StatsPaneel setDate(Date date) {
+        this.startDatum = date;
         return this;
     }
 
-    public int getTodoAmount() {
-        return todoAmount;
+    public int getTeMakenHoeveelheid() {
+        return teMakenHoeveelheid;
     }
 
-    public int getMistakes() {
-        return mistakesAmount;
+    public int getFouten() {
+        return foutenHoeveelheid;
     }
 
-    public StatsPanel setMistakes(int value) {
-        mistakes.setText("Aantal opdrachten tot nu toe fout: " + value);
-        mistakesAmount = value;
+    public StatsPaneel setFouten(int value) {
+        fouten.setText("Aantal opdrachten tot nu toe fout: " + value);
+        foutenHoeveelheid = value;
         return this;
     }
 
     public long getTimeInSeconds() {
-        return (new Date().getTime() - startDate.getTime()) / 1000;
+        return (new Date().getTime() - startDatum.getTime()) / 1000;
     }
 
-    public int getDone() {
-        return doneAmount;
+    public int getAfgerond() {
+        return afgerondHoeveelheid;
     }
 
-    public StatsPanel setDone(int value) {
-        done.setText("Aantal opdrachten tot nu toe goed: " + value);
-        doneAmount = value;
+    public StatsPaneel setAfgerond(int value) {
+        afgerond.setText("Aantal opdrachten tot nu toe goed: " + value);
+        afgerondHoeveelheid = value;
         return this;
     }
 
     public int getPercentage() {
-        return Math.round((float) doneAmount / (doneAmount + mistakesAmount) * 100);
+        return Math.round((float) afgerondHoeveelheid / (afgerondHoeveelheid + foutenHoeveelheid) * 100);
     }
 }

@@ -6,15 +6,16 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 
 /**
+ * Een hulp klasse voor het laden van afbeeldingen en icoontjes.
  * @author Sem Postma
  */
-public class AppIcon {
+public class AppIcoontje {
     /**
      * De naam van de afbeelding in de resources folder.
      */
     protected String imageName;
 
-    public AppIcon(String imageName) {
+    public AppIcoontje(String imageName) {
         this.imageName = imageName;
     }
 

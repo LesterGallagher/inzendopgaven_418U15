@@ -2,9 +2,12 @@ package com.company;
 
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
-import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * Een DocumentListener voor een JTextField.
+ * @author Sem Postma
+ */
 public class JTextFieldDocumentChangeListener implements DocumentListener {
     private ActionListener listener;
 
@@ -26,6 +29,7 @@ public class JTextFieldDocumentChangeListener implements DocumentListener {
     public void changedUpdate(DocumentEvent e) {
         update();
     }
+
     public void update() {
         listener.actionPerformed(null);
     }

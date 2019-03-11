@@ -6,11 +6,11 @@ import java.awt.*;
 import java.awt.event.WindowEvent;
 
 /**
- * Het start scherm van de applicatie.
+ * Het login scherm van de applicatie.
  * Hier vult de leerling zijn of haar naam in.
  * @author Sem Postma
  */
-public class StartScreen extends JFrame {
+public class LoginScherm extends JFrame {
 
     /**
      * De naam van de leerling.
@@ -30,7 +30,7 @@ public class StartScreen extends JFrame {
      */
     private JButton startButton = new JButton("Start");
 
-    public StartScreen() {
+    public LoginScherm() {
         setTitle("Start Scherm");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setIconImage(new AppIcoontje("/icon.png").getImage());
@@ -46,7 +46,7 @@ public class StartScreen extends JFrame {
         naamField.setAlignmentX(Component.CENTER_ALIGNMENT);
         panel.add(naamField);
         panel.add(Box.createVerticalStrut(10));
-        startButton.addActionListener(e -> this.showMenu());
+        startButton.addActionListener(e -> this.openRekentrainer());
         startButton.setAlignmentX(Component.CENTER_ALIGNMENT);
         panel.add(startButton);
         getContentPane().add(panel);
@@ -67,7 +67,10 @@ public class StartScreen extends JFrame {
         return name;
     }
 
-    private void showMenu() {
+    /**
+     * Open de rekentrainer.
+     */
+    private void openRekentrainer() {
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         name = naamField.getText();
         this.dispatchEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));

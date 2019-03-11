@@ -4,10 +4,12 @@ import javax.swing.*;
 import java.awt.event.KeyEvent;
 
 /**
+ * Het menu van het start scherm.
+ * Deze klasse zorgt dat het menu van het start scherm aangemaakt wordt.
  * @author Sem Postma
  */
-public class HomeMenu extends JMenuBar {
-    public HomeMenu(StartFrame home) {
+public class StartFrameMenu extends JMenuBar {
+    public StartFrameMenu(StartFrame startFrame) {
 
         JMenuItem logMenuItem = new JMenuItem("Logboek");
         logMenuItem.setMnemonic(KeyEvent.VK_L);
@@ -34,7 +36,7 @@ public class HomeMenu extends JMenuBar {
         helpMenu.add(documentationMenu);
 
         documentationMenu.addActionListener(new LinkClickActionListener(
-                home,
+                startFrame,
                 "https://esstudio.site/inzendopgaven_418U15/java-doc/com/company/package-summary.html"
         ));
 
@@ -44,10 +46,8 @@ public class HomeMenu extends JMenuBar {
         helpMenu.add(websiteMenuItem);
 
         websiteMenuItem.addActionListener(new LinkClickActionListener(
-                home,
+                startFrame,
                 "https://esstudio.site/inzendopgaven_418U15"
         ));
-
-
     }
 }

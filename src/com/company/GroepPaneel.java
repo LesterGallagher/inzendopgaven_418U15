@@ -4,9 +4,11 @@ import javax.swing.*;
 import java.text.MessageFormat;
 
 /**
+ * Het eerste paneel van de applicatie.
+ * Hier kan de leerling de groep aankiezen.
  * @author Sem Postma
  */
-public class GroepPanel extends JPanel {
+public class GroepPaneel extends JPanel {
 
     /**
      * Het statische variabel voor de groep van de leerling.
@@ -17,7 +19,7 @@ public class GroepPanel extends JPanel {
      */
     private JLabel groepLabel = new JLabel("Kies je groep:");
 
-    public GroepPanel() {
+    public GroepPaneel() {
         groepLabel.setFont(groepLabel.getFont().deriveFont(20.0f));
         this.add(groepLabel);
         this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));

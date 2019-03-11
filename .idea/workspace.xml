@@ -7,33 +7,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e061cf64-2c78-4b77-9ddf-4483946220e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/LogItemFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/LogOverviewFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/RekenTrainSessie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/RekenTrainSessieItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/WillekeurigFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FuglenRekenTrainerSessies.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FuglenRekenTrainerSessies.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-doc/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/allclasses-index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-doc/allclasses.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/allclasses.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-doc/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/allpackages-index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-doc/com/company/AftrekkenFrame.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/AftrekkenFrame.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-doc/com/company/AppIcon.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/AppIcon.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-doc/com/company/DelenFrame.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/DelenFrame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-doc/com/company/DocumentationClickActionListener.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/DocumentationClickActionListener.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-doc/com/company/FinalStats.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/FinalStats.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-doc/com/company/GroepPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/GroepPanel.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-doc/com/company/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/Home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-doc/com/company/HomeButtonClickActionListener.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/HomeButtonClickActionListener.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-doc/com/company/HomeMenu.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/HomeMenu.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-doc/com/company/JTextFieldDocumentChangeListener.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/JTextFieldDocumentChangeListener.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-doc/com/company/LinkClickActionListener.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/LinkClickActionListener.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-doc/com/company/LogItemFrame.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/LogItemFrame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-doc/com/company/LogOverviewFrame.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/LogOverviewFrame.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-doc/com/company/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/Main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-doc/com/company/OefeningFrame.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/OefeningFrame.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-doc/com/company/OptellenFrame.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/OptellenFrame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-doc/com/company/RekenTrainSessie.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/RekenTrainSessie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-doc/com/company/RekenTrainSessieItem.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/RekenTrainSessieItem.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-doc/com/company/StartScreen.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/StartScreen.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-doc/com/company/StatsPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/StatsPanel.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-doc/com/company/VermenigvuldigenFrame.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/VermenigvuldigenFrame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-doc/com/company/WillekeurigFrame.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/WillekeurigFrame.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-doc/com/company/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/package-summary.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-doc/com/company/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/com/company/package-tree.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-doc/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/constant-values.html" afterDir="false" />
@@ -48,7 +49,11 @@
       <change beforePath="$PROJECT_DIR$/java-doc/index-files/index-15.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/index-files/index-15.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-doc/index-files/index-16.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/index-files/index-16.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-doc/index-files/index-17.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/index-files/index-17.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-doc/index-files/index-18.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/index-files/index-18.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-doc/index-files/index-19.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/index-files/index-19.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-doc/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/index-files/index-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-doc/index-files/index-20.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/index-files/index-20.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-doc/index-files/index-21.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/index-files/index-21.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-doc/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/index-files/index-3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-doc/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/index-files/index-4.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-doc/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/index-files/index-5.html" afterDir="false" />
@@ -58,24 +63,33 @@
       <change beforePath="$PROJECT_DIR$/java-doc/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/index-files/index-9.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-doc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-doc/member-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/member-search-index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-doc/member-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/member-search-index.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-doc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-doc/package-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/package-search-index.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-doc/serialized-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/serialized-form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-doc/type-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/type-search-index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/exe/FuglenRekentrainer.exe" beforeDir="false" afterPath="$PROJECT_DIR$/out/exe/FuglenRekentrainer.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/aftrekken.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/aftrekken.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/delen.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/delen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/optellen.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/optellen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/vermenigvuldigen.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/vermenigvuldigen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/secret.properties" beforeDir="false" afterPath="$PROJECT_DIR$/secret.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/AftrekkenFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/AftrekkenFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-doc/type-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/java-doc/type-search-index.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/AftrekkenFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/MinSommenFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/AppIcon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/AppIcoontje.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/DelenFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/DelenFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/FinalStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/FinalStats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Home.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/HomeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/HomeMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/GroepPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/GroepPaneel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/StartFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/HomeButtonClickActionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/StartFrameKnopKlikActionListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/HomeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/StartFrameMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/JTextFieldDocumentChangeListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/JTextFieldDocumentChangeListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/LinkClickActionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/LinkClickActionListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/LogItemFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/LogItemFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/LogOverviewFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/LogOverviewFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/OefeningFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/OefeningFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/OptellenFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/OptellenFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/StatsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/StatsPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/RekenTrainSessie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/RekenTrainSessie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/RekenTrainSessieItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/RekenTrainSessieItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/StartScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/LoginScherm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/StatsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/StatsPaneel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/VermenigvuldigenFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/VermenigvuldigenFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/WillekeurigFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/WillekeurigFrame.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -87,22 +101,117 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="833">
-                <caret line="49" selection-start-line="49" selection-end-line="49" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="58">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/RekenTrainSessieItem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="18" column="10" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/OefeningFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/StartFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="115" column="31" selection-start-line="115" selection-start-column="31" selection-end-line="115" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3988#3989#0" expanded="true" />
+                <element signature="e#4019#4020#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/StartFrameKnopKlikActionListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/src/com/company/StatsPaneel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+            <state relative-caret-position="85">
+              <caret line="9" column="41" lean-forward="true" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1437#1438#0" expanded="true" />
+                <element signature="e#1470#1471#0" expanded="true" />
+                <element signature="e#1502#1503#0" expanded="true" />
+                <element signature="e#1539#1540#0" expanded="true" />
+                <element signature="e#1758#1759#0" expanded="true" />
+                <element signature="e#1832#1833#0" expanded="true" />
+                <element signature="e#1860#1861#0" expanded="true" />
+                <element signature="e#1893#1894#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/VermenigvuldigenFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/StartFrameMenu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-390">
+              <caret line="7" column="72" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/LoginScherm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="72" column="4" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="4" />
+              <folding>
+                <element signature="e#1849#1850#0" expanded="true" />
+                <element signature="e#1876#1877#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/WillekeurigFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -118,8 +227,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>exe</find>
-      <find>newQue</find>
       <find>renderquest</find>
       <find>renderquestion</find>
       <find>settext</find>
@@ -140,12 +247,23 @@
       <find>items</find>
       <find>Sessie-</find>
       <find>useranswer</find>
-      <find>filename</find>
       <find>getContentPane()</find>
       <find>useran</find>
+      <find>afgerond</find>
+      <find>resultsInner</find>
+      <find>gebruiker</find>
+      <find>headerLabel</find>
+      <find>initialiseert</find>
+      <find>timestamp</find>
+      <find>filename</find>
+      <find>start</find>
     </findStrings>
     <replaceStrings>
       <replace>contentPane</replace>
+      <replace>leerling</replace>
+      <replace>Initialiseert</replace>
+      <replace>tijdstempel</replace>
+      <replace>bestandsNaam</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -158,31 +276,42 @@
         <option value="$PROJECT_DIR$/secret.properties" />
         <option value="$PROJECT_DIR$/out/production/FuglenRekentrainer/META-INF/MANIFEST.MF" />
         <option value="$PROJECT_DIR$/l4j.xml" />
-        <option value="$PROJECT_DIR$/src/com/company/StartScreen.java" />
         <option value="$PROJECT_DIR$/java-doc/_config.yml" />
         <option value="$PROJECT_DIR$/src/com/company/DocumentationClickActionListener.java" />
-        <option value="$PROJECT_DIR$/src/com/company/LinkClickActionListener.java" />
-        <option value="$PROJECT_DIR$/src/com/company/GroepPanel.java" />
         <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/src/com/company/CalculatorHelpers.java" />
-        <option value="$PROJECT_DIR$/src/com/company/AftrekkenFrame.java" />
-        <option value="$PROJECT_DIR$/src/com/company/DelenFrame.java" />
-        <option value="$PROJECT_DIR$/src/com/company/OptellenFrame.java" />
-        <option value="$PROJECT_DIR$/src/com/company/VermenigvuldigenFrame.java" />
-        <option value="$PROJECT_DIR$/src/com/company/WillekeurigFrame.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Home.java" />
-        <option value="$PROJECT_DIR$/src/com/company/StatsPanel.java" />
-        <option value="$PROJECT_DIR$/src/com/company/FinalStats.java" />
         <option value="$PROJECT_DIR$/src/com/company/LogOverview.java" />
-        <option value="$PROJECT_DIR$/src/com/company/HomeMenu.java" />
         <option value="$PROJECT_DIR$/src/com/company/LogOverViewTableModel.java" />
-        <option value="$PROJECT_DIR$/src/com/company/RekenTrainSessieItem.java" />
-        <option value="$PROJECT_DIR$/src/com/company/OefeningFrame.java" />
-        <option value="$PROJECT_DIR$/src/com/company/RekenTrainSessie.java" />
-        <option value="$PROJECT_DIR$/src/com/company/LogItemFrame.java" />
-        <option value="$PROJECT_DIR$/src/com/company/LogOverviewFrame.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/com/company/HomeButtonClickActionListener.java" />
+        <option value="$PROJECT_DIR$/src/com/company/StatsPanel.java" />
+        <option value="$PROJECT_DIR$/src/com/company/AppIcon.java" />
+        <option value="$PROJECT_DIR$/src/com/company/GroepPanel.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Home.java" />
+        <option value="$PROJECT_DIR$/src/com/company/HomeMenu.java" />
+        <option value="$PROJECT_DIR$/src/com/company/LogItemFrame.java" />
+        <option value="$PROJECT_DIR$/src/com/company/LogOverviewFrame.java" />
+        <option value="$PROJECT_DIR$/src/com/company/LinkClickActionListener.java" />
+        <option value="$PROJECT_DIR$/src/com/company/JTextFieldDocumentChangeListener.java" />
+        <option value="$PROJECT_DIR$/src/com/company/GroepPaneel.java" />
+        <option value="$PROJECT_DIR$/src/com/company/FinalStats.java" />
+        <option value="$PROJECT_DIR$/src/com/company/AftrekkenFrame.java" />
+        <option value="$PROJECT_DIR$/src/com/company/AppIcoontje.java" />
+        <option value="$PROJECT_DIR$/src/com/company/DelenFrame.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/company/OptellenFrame.java" />
+        <option value="$PROJECT_DIR$/src/com/company/RekenTrainSessie.java" />
+        <option value="$PROJECT_DIR$/src/com/company/RekenTrainSessieItem.java" />
+        <option value="$PROJECT_DIR$/src/com/company/OefeningFrame.java" />
+        <option value="$PROJECT_DIR$/src/com/company/StartFrame.java" />
+        <option value="$PROJECT_DIR$/src/com/company/StartFrameKnopKlikActionListener.java" />
+        <option value="$PROJECT_DIR$/src/com/company/StartFrameMenu.java" />
+        <option value="$PROJECT_DIR$/src/com/company/StartScreen.java" />
+        <option value="$PROJECT_DIR$/src/com/company/LoginScherm.java" />
+        <option value="$PROJECT_DIR$/src/com/company/WillekeurigFrame.java" />
+        <option value="$PROJECT_DIR$/src/com/company/VermenigvuldigenFrame.java" />
+        <option value="$PROJECT_DIR$/src/com/company/StatsPaneel.java" />
       </list>
     </option>
   </component>
@@ -204,6 +333,23 @@
               <item name="FuglenRekentrainer" type="b2602c69:ProjectViewProjectNode" />
               <item name="FuglenRekentrainer" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="FuglenRekentrainer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FuglenRekentrainer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FuglenRekentrainer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FuglenRekentrainer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FuglenRekentrainer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FuglenRekentrainer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -217,13 +363,13 @@
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="fuglenrekentrainer" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551986049221" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552308441035" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -245,7 +391,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JAR Application.FuglenRekentrainer.jar">
+  <component name="RunManager" selected="Application.FuglenRekentrainer">
     <configuration default="true" type="AntRunConfiguration">
       <antsettings antfile="file://$PROJECT_DIR$/build.xml" target="jar" />
       <method v="2">
@@ -306,27 +452,27 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8325472" visible="true" weight="0.1624161" />
-      <window_info id="Structure" order="1" sideWeight="0.16745283" side_tool="true" visible="true" weight="0.1624161" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8312236" visible="true" weight="0.1624161" />
+      <window_info id="Structure" order="1" sideWeight="0.16877638" side_tool="true" visible="true" weight="0.1624161" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4986577" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4852349" weight="0.3286119" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49597314" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48255032" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49530202" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49932885" weight="0.3286119" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.504698" side_tool="true" visible="true" weight="0.39943343" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50402683" side_tool="true" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49731544" weight="0.3286119" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.48255032" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4805369" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24966443" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" visible="true" weight="0.24966443" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Maven" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
@@ -361,28 +507,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/JTextFieldDocumentChangeListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java-doc/_config.yml" />
     <entry file="file://$PROJECT_DIR$/secret.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -407,13 +536,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GroepPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/jdk.rmic/sun/tools/tree/ThisExpression.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
@@ -421,81 +543,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/AppIcon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/CalculatorHelpers.java" />
     <entry file="file://$PROJECT_DIR$/resources/willekeurig-icon.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/AftrekkenFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/DelenFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/vermenigvuldigen-icon.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/FinalStats.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="69" column="58" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/OptellenFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/StartScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="43" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/HomeButtonClickActionListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/LinkClickActionListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/HomeMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FuglenRekenTrainerSessies.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -512,89 +565,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/StatsPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1225">
-          <caret line="81" column="16" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1803#1804#0" expanded="true" />
-            <element signature="e#1877#1878#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Home.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="37" column="57" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/willekeurig.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/RekenTrainSessie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="81" column="42" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1926#1944#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/RekenTrainSessieItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/LogItemFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/LogOverviewFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="66" column="13" selection-start-line="58" selection-start-column="68" selection-end-line="66" selection-end-column="13" />
-          <folding>
-            <element signature="e#1968#2487#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/VermenigvuldigenFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/WillekeurigFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/OefeningFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="74" column="23" selection-start-line="74" selection-start-column="17" selection-end-line="74" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -613,8 +585,197 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        <state relative-caret-position="238">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/FinalStats.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/AppIcoontje.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="64" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/DelenFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/GroepPaneel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+          <folding>
+            <element signature="e#1073#1074#0" expanded="true" />
+            <element signature="e#1101#1102#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/JTextFieldDocumentChangeListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/LinkClickActionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/LogItemFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/LogOverviewFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding>
+            <element signature="e#2261#2780#0" expanded="true" />
+            <element signature="e#2779#2780#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/MinSommenFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/OptellenFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/RekenTrainSessie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1517">
+          <caret line="170" column="79" selection-start-line="170" selection-start-column="79" selection-end-line="170" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5533#5534#0" expanded="true" />
+            <element signature="e#5588#5589#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/RekenTrainSessieItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="10" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/OefeningFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/StartFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="115" column="31" selection-start-line="115" selection-start-column="31" selection-end-line="115" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3988#3989#0" expanded="true" />
+            <element signature="e#4019#4020#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/LoginScherm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="72" column="4" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="4" />
+          <folding>
+            <element signature="e#1849#1850#0" expanded="true" />
+            <element signature="e#1876#1877#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/StartFrameKnopKlikActionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/VermenigvuldigenFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/WillekeurigFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/StartFrameMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-390">
+          <caret line="7" column="72" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/StatsPaneel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="41" lean-forward="true" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1437#1438#0" expanded="true" />
+            <element signature="e#1470#1471#0" expanded="true" />
+            <element signature="e#1502#1503#0" expanded="true" />
+            <element signature="e#1539#1540#0" expanded="true" />
+            <element signature="e#1758#1759#0" expanded="true" />
+            <element signature="e#1832#1833#0" expanded="true" />
+            <element signature="e#1860#1861#0" expanded="true" />
+            <element signature="e#1893#1894#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

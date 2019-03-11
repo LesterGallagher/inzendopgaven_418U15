@@ -6,31 +6,62 @@ import java.awt.*;
 import java.awt.event.ActionListener;
 
 /**
+ * Het startscherm van de applicatie.
  * @author Sem Postma
  */
-public class Home extends JFrame {
+public class StartFrame extends JFrame {
 
-    private static int rotations = 20;
-    protected JPanel contentPane = new JPanel(new BorderLayout());
-    protected JPanel buttonPane = new JPanel();
+    /**
+     * Het aantal rotaties voordat een sessie is afgerond.
+     */
+    private static int rotaties = 20;
+    /**
+     * Het paneel met de inhoud.
+     */
+    protected JPanel inhoudPaneel = new JPanel(new BorderLayout());
+    /**
+     * Het paneel met de knoppen.
+     */
+    protected JPanel knoppenPaneel = new JPanel();
+    /**
+     * De frame met de optelsommen.
+     */
     protected OptellenFrame optellenFrame = new OptellenFrame();
-    protected AftrekkenFrame aftrekkenFrame = new AftrekkenFrame();
+    /**
+     * De frame met de minsommen.
+     */
+    protected MinSommenFrame minSommenFrame = new MinSommenFrame();
+    /**
+     * De frame met de vermenigvuldiging opdrachten.
+     */
     protected VermenigvuldigenFrame vermenigvuldigenFrame = new VermenigvuldigenFrame();
+    /**
+     * De frame met de deelsommen.
+     */
     protected DelenFrame delenFrame = new DelenFrame();
+    /**
+     * De frame met de willekeurige opdrachten.
+     */
     protected WillekeurigFrame willekeurigFrame = new WillekeurigFrame();
-    protected JLabel amountOfSums = new JLabel("Hoeveel sommen wil je maken?");
-    protected JTextField amountOfSumsField = new JTextField("20");
+    /**
+     * De label met het aaantal opdrachten.
+     */
+    protected JLabel aantalOpdrachten = new JLabel("Hoeveel sommen wil je maken?");
+    /**
+     * Het tekstveld met het aantal opdrachten.
+     */
+    protected JTextField aantalOpdrachtenVeld = new JTextField("20");
 
-    public Home() {
+    public StartFrame() {
         setTitle("Rekentrainer Keuze scherm");
         setSize(900, 600);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setIconImage(new AppIcoontje("/icon.png").getImage());
-        setJMenuBar(new HomeMenu(this));
+        setJMenuBar(new StartFrameMenu(this));
 
         Border padding = BorderFactory.createEmptyBorder(10, 10, 10, 10);
-        contentPane.setBorder(padding);
+        inhoudPaneel.setBorder(padding);
 
         JPanel boxPane = new JPanel();
         boxPane.setLayout(new BoxLayout(boxPane, BoxLayout.Y_AXIS));
@@ -41,41 +72,50 @@ public class Home extends JFrame {
         boxPane.add(label);
         boxPane.add(textExplanation);
         boxPane.add(Box.createVerticalStrut(20));
-        boxPane.add(amountOfSums);
-        amountOfSums.setFont(amountOfSums.getFont().deriveFont(20.0f));
-        boxPane.add(amountOfSumsField);
-        amountOfSumsField.setFont(amountOfSumsField.getFont().deriveFont(14.0f));
-        amountOfSumsField.getDocument().addDocumentListener(new JTextFieldDocumentChangeListener(e -> {
+        boxPane.add(aantalOpdrachten);
+        aantalOpdrachten.setFont(aantalOpdrachten.getFont().deriveFont(20.0f));
+        boxPane.add(aantalOpdrachtenVeld);
+        aantalOpdrachtenVeld.setFont(aantalOpdrachtenVeld.getFont().deriveFont(14.0f));
+        aantalOpdrachtenVeld.getDocument().addDocumentListener(new JTextFieldDocumentChangeListener(e -> {
             try {
-                rotations = Integer.parseInt(amountOfSumsField.getText());
+                rotaties = Integer.parseInt(aantalOpdrachtenVeld.getText());
             } catch (NumberFormatException err) {
             }
         }));
         boxPane.add(Box.createVerticalStrut(20));
-        contentPane.add(boxPane, BorderLayout.NORTH);
+        inhoudPaneel.add(boxPane, BorderLayout.NORTH);
 
-        buttonPane.setLayout(new GridBagLayout());
+        knoppenPaneel.setLayout(new GridBagLayout());
 
         // add menu buttons
-        addButton("/optellen.png", new HomeButtonClickActionListener(optellenFrame));
-        addButton("/aftrekken.png", new HomeButtonClickActionListener(aftrekkenFrame));
-        addButton("/vermenigvuldigen.png", new HomeButtonClickActionListener(vermenigvuldigenFrame));
-        addButton("/delen.png", new HomeButtonClickActionListener(delenFrame));
-        addButton("/willekeurig.png", new HomeButtonClickActionListener(willekeurigFrame));
+        addButton("/optellen.png", new StartFrameKnopKlikActionListener(optellenFrame));
+        addButton("/aftrekken.png", new StartFrameKnopKlikActionListener(minSommenFrame));
+        addButton("/vermenigvuldigen.png", new StartFrameKnopKlikActionListener(vermenigvuldigenFrame));
+        addButton("/delen.png", new StartFrameKnopKlikActionListener(delenFrame));
+        addButton("/willekeurig.png", new StartFrameKnopKlikActionListener(willekeurigFrame));
 
-        contentPane.add(buttonPane, BorderLayout.SOUTH);
+        inhoudPaneel.add(knoppenPaneel, BorderLayout.SOUTH);
 
-        GroepPanel groepPanel = new GroepPanel();
+        GroepPaneel groepPanel = new GroepPaneel();
         groepPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
-        contentPane.add(groepPanel, BorderLayout.CENTER);
+        inhoudPaneel.add(groepPanel, BorderLayout.CENTER);
 
-        add(contentPane);
+        add(inhoudPaneel);
     }
 
-    public static int getRotations() {
-        return rotations;
+    /**
+     * Verkrijg het aantal rotaties.
+     * @return Het aantal rotaties.
+     */
+    public static int getRotaties() {
+        return rotaties;
     }
 
+    /**
+     * Voeg een knop toe aan het start scherm.
+     * @param imageName De naam van de afbeelding in de resource folder.
+     * @param listener De listener voor wanneer er op de knop geklikt wordt.
+     */
     protected void addButton(String imageName, ActionListener listener) {
         JButton btn = new JButton();
         btn.setIcon(new AppIcoontje(imageName).getIcon());
@@ -85,6 +125,6 @@ public class Home extends JFrame {
         btn.setBorder(BorderFactory.createLineBorder(Color.red, 2)); // Line Border + Thickness of the Border
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.insets = new Insets(5, 5, 5, 5);
-        buttonPane.add(btn, gbc);
+        knoppenPaneel.add(btn, gbc);
     }
 }

@@ -2,17 +2,21 @@ package com.company;
 
 import java.util.concurrent.ThreadLocalRandom;
 
+/**
+ * Het oefening frame voor willekeurige opdrachten.
+ * @author Sem Postma
+ */
 public class WillekeurigFrame extends OefeningFrame {
 
     public WillekeurigFrame() {
-        setIconImage(new AppIcon("/willekeurig-icon.png").getImage());
+        setIconImage(new AppIcoontje("/willekeurig-icon.png").getImage());
 
         operator = 'w';
         operationName = "Willekeurig";
     }
 
     /**
-     * initialiseert een nieuwe vraag.
+     * Initialiseert een nieuwe vraag.
      */
     protected void newQuestion() {
         int rnd = ThreadLocalRandom.current().nextInt(0, 3);

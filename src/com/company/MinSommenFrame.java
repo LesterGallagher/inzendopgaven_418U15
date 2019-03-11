@@ -4,9 +4,9 @@ package com.company;
  * Een OefeningFrame voor minsommen.
  * @author Sem Postma
  */
-public class AftrekkenFrame extends OefeningFrame {
+public class MinSommenFrame extends OefeningFrame {
 
-    public AftrekkenFrame() {
+    public MinSommenFrame() {
         setIconImage(new AppIcoontje("/aftrekken-icon.png").getImage());
 
         operator = '-';
