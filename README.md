@@ -8,6 +8,7 @@ Download het exe bestand als een zip: [FuglenRekentrainer.zip](https://esstudio.
 
 - java versie "1.8" of later
 - Java(TM) SE Runtime Environment "1.8" of later
+- JAVA JDK versie 11
 
 ## Installatie instructies
 
