@@ -8,61 +8,127 @@ import java.awt.event.WindowEvent;
 import java.util.Date;
 import java.util.concurrent.ThreadLocalRandom;
 
+/**
+ * Het oefening frame.
+ * Deze abstracte klasse is de basis voor alle oefening frames.
+ * In deze klasse zijn een aantal methodes te vinden die de logica voor alle oefening frames verzorgen.
+ * @author Sem Postma
+ */
 public abstract class OefeningFrame extends JFrame {
 
+    /**
+     * De eerste term van de opdracht.
+     * Bijvoorbeeld 1 in de som: "1 + 2 = 3".
+     */
     protected int firstArgument;
+    /**
+     * De tweede term van de opdracht.
+     * Bijvoorbeeld 2 in de som: "1 + 2 = 3".
+     */
     protected int secondArgument;
+    /**
+     * Het antwoord van de opdracht.
+     * Bijvoorbeeld 3 in de som: "1 + 2 = 3".
+     */
     protected int answer;
+    /**
+     * De basisoperatie van de opdracht.
+     * Bijvoorbeeld "+" in de som: "1 + 2 = 3".
+     * Deze waarde is altijd meer dan nul.
+     */
     protected char operator;
+    /**
+     * Het antwoord van de leerling.
+     */
     protected int userAnswer;
+    /**
+     * De naam van de opdracht.
+     * Bijvoorbeeld: "Optellen".
+     */
     protected String operationName;
 
+    /**
+     * Het TextField waar de leerling
+     */
     protected JTextField answerTextField = new JTextField("", 20);
+    /**
+     * De label met de opdracht.
+     */
     protected JLabel questionLabel = new JLabel("Wat is X Y X");
+    /**
+     * De knop om het antwoord te checken.
+     */
     protected JButton answerButton = new JButton("Check");
+    /**
+     * De "Volgende" knop.
+     */
     protected JButton nextButton = new JButton("Volgende");
-    protected JLabel resultLabel = new JLabel();
-    protected JPanel contentPane = new JPanel(new BorderLayout());
-    protected JPanel questionPane = new JPanel();
-    protected JPanel resultPane = new JPanel();
-    protected StatsPanel statsPanel = new StatsPanel();
+    /**
+     * De label met het resultaat.
+     */
+    protected JLabel resultaatLabel = new JLabel();
+    /**
+     * Het paneel met de inhoud.
+     */
+    protected JPanel inhoudPaneel = new JPanel(new BorderLayout());
+    /**
+     * Het paneel met de vraag.
+     */
+    protected JPanel vraagPaneel = new JPanel();
+    /**
+     * Het paneel met het resultaat.
+     */
+    protected JPanel resultaatPaneel = new JPanel();
+    /**
+     * Het paneel met de statistieken.
+     */
+    protected StatsPaneel statsPaneel = new StatsPaneel();
+    /**
+     * De label met de naam van de opdracht.
+     */
     protected JLabel headerLabel = new JLabel();
+    /**
+     * Het paneel met de uiteindelijke statistieken.
+     */
     protected FinalStats finalStats = new FinalStats(this);
+    /**
+     * Een referentie naar het sessie object.
+     * Dit object houdt de score en de tijd bij en slaat deze op zodat de leerling deze later terug kan bekijken.
+     */
     protected RekenTrainSessie sessie = new RekenTrainSessie();
 
     public OefeningFrame() {
         setSize(600, 460);
         Border padding = BorderFactory.createEmptyBorder(10, 10, 10, 10);
-        contentPane.setBorder(padding);
+        inhoudPaneel.setBorder(padding);
         setLocationRelativeTo(null);
-        resultPane.setLayout(new BoxLayout(resultPane, BoxLayout.PAGE_AXIS));
-        questionPane.setLayout(new BoxLayout(questionPane, BoxLayout.X_AXIS));
-        answerTextField.setMaximumSize( answerTextField.getPreferredSize() );
+        resultaatPaneel.setLayout(new BoxLayout(resultaatPaneel, BoxLayout.PAGE_AXIS));
+        vraagPaneel.setLayout(new BoxLayout(vraagPaneel, BoxLayout.X_AXIS));
+        answerTextField.setMaximumSize(answerTextField.getPreferredSize());
         answerTextField.addActionListener(e -> processAnswerToQuestion());
-        questionPane.add(questionLabel);
-        questionPane.add(Box.createHorizontalStrut(10));
-        questionPane.add(answerTextField);
-        questionPane.add(Box.createHorizontalStrut(10));
-        questionPane.add(answerButton);
+        vraagPaneel.add(questionLabel);
+        vraagPaneel.add(Box.createHorizontalStrut(10));
+        vraagPaneel.add(answerTextField);
+        vraagPaneel.add(Box.createHorizontalStrut(10));
+        vraagPaneel.add(answerButton);
         answerButton.addActionListener(e -> processAnswerToQuestion());
 
-        resultPane.add(resultLabel);
-        resultPane.add(nextButton);
+        resultaatPaneel.add(resultaatLabel);
+        resultaatPaneel.add(nextButton);
         nextButton.addActionListener(e -> newQuestion());
 
-        headerLabel = new JLabel();
         headerLabel.setFont(headerLabel.getFont().deriveFont(28.0f));
-        contentPane.add(headerLabel, BorderLayout.NORTH);
-        contentPane.add(statsPanel, BorderLayout.SOUTH);
+        inhoudPaneel.add(headerLabel, BorderLayout.NORTH);
+        inhoudPaneel.add(statsPaneel, BorderLayout.SOUTH);
 
         this.getRootPane().setDefaultButton(answerButton);
         answerButton.requestFocus();
 
         finalStats.addOnRepeatListener(e -> restart());
 
-        add(contentPane);
+        add(inhoudPaneel);
 
-        this.addWindowListener(new WindowAdapter(){
+        this.addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
                 persist();
@@ -73,15 +139,15 @@ public abstract class OefeningFrame extends JFrame {
     private void processAnswerToQuestion() {
         try {
             this.userAnswer = Integer.parseInt(answerTextField.getText());
-        }   catch(NumberFormatException err) {
+        } catch (NumberFormatException err) {
             JOptionPane.showMessageDialog(null, '"' + answerTextField.getText()
                     + "\" is geen geldig heel getal.");
             return;
         }
-        statsPanel.decrementTodo();
+        statsPaneel.decrementTodo();
         renderAnswer();
         sessie.push(this);
-        if (statsPanel.getTodoAmount() <= 0) {
+        if (statsPaneel.getTeMakenHoeveelheid() <= 0) {
             renderFinalStats();
         }
     }
@@ -93,22 +159,22 @@ public abstract class OefeningFrame extends JFrame {
     }
 
     private void persist() {
-        if (statsPanel.getDone() + statsPanel.getMistakes() == 0) return;
+        if (statsPaneel.getAfgerond() + statsPaneel.getFouten() == 0) return;
         sessie.stop(
-                statsPanel.getDone(),
-                statsPanel.getMistakes(),
-                statsPanel.getTodoAmount(),
-                statsPanel.getPercentage(),
-                statsPanel.getTimeInSeconds());
+                statsPaneel.getAfgerond(),
+                statsPaneel.getFouten(),
+                statsPaneel.getTeMakenHoeveelheid(),
+                statsPaneel.getPercentage(),
+                statsPaneel.getTimeInSeconds());
     }
 
     protected void renderFinalStats() {
-        contentPane.remove(questionPane);
-        contentPane.remove(resultPane);
-        contentPane.remove(statsPanel);
-        finalStats.init(statsPanel);
-        contentPane.add(finalStats);
-        setTitle("Rekentrainer - Resultaat " + StartScreen.getUserName());
+        inhoudPaneel.remove(vraagPaneel);
+        inhoudPaneel.remove(resultaatPaneel);
+        inhoudPaneel.remove(statsPaneel);
+        finalStats.init(statsPaneel);
+        inhoudPaneel.add(finalStats);
+        setTitle("Rekentrainer - Resultaat " + LoginScherm.getUserName());
         revalidate();
         repaint();
     }
@@ -118,8 +184,8 @@ public abstract class OefeningFrame extends JFrame {
         String question = String.format("Wat is %d %c %d?", firstArgument, operator, secondArgument);
         questionLabel.setText(question);
         answerTextField.setText("");
-        contentPane.remove(resultPane);
-        contentPane.add(questionPane, BorderLayout.CENTER);
+        inhoudPaneel.remove(resultaatPaneel);
+        inhoudPaneel.add(vraagPaneel, BorderLayout.CENTER);
         answerTextField.requestFocus();
         revalidate();
         repaint();
@@ -128,14 +194,14 @@ public abstract class OefeningFrame extends JFrame {
     protected void renderAnswer() {
         boolean correct = userAnswer == answer;
         if (correct) {
-            resultLabel.setText("Goed gedaan!");
-            statsPanel.incrementDone();
+            resultaatLabel.setText("Goed gedaan!");
+            statsPaneel.incrementDone();
         } else {
-            resultLabel.setText("Helaas het antwoord was \"" + answer + "\".");
-            statsPanel.incrementMistakes();
+            resultaatLabel.setText("Helaas het antwoord was \"" + answer + "\".");
+            statsPaneel.incrementMistakes();
         }
-        contentPane.remove(questionPane);
-        contentPane.add(resultPane, BorderLayout.CENTER);
+        inhoudPaneel.remove(vraagPaneel);
+        inhoudPaneel.add(resultaatPaneel, BorderLayout.CENTER);
         this.getRootPane().setDefaultButton(nextButton);
         nextButton.requestFocus();
         revalidate();
@@ -145,33 +211,33 @@ public abstract class OefeningFrame extends JFrame {
     abstract void newQuestion();
 
     public void init() {
-        statsPanel
-                .setDone(0)
-                .setMistakes(0)
+        statsPaneel
+                .setAfgerond(0)
+                .setFouten(0)
                 .setDate(new Date())
-                .setTodo(Home.getRotations());
-        contentPane.remove(finalStats);
-        contentPane.add(statsPanel, BorderLayout.SOUTH);
-        setTitle(operationName + " - Groep " + GroepPanel.group);
+                .setTeMaken(StartFrame.getRotaties());
+        inhoudPaneel.remove(finalStats);
+        inhoudPaneel.add(statsPaneel, BorderLayout.SOUTH);
+        setTitle(operationName + " - Groep " + GroepPaneel.getGroup());
         sessie.operationName = operationName;
         newQuestion();
     }
 
     protected void initOptellenQuestion() {
-        this.firstArgument = ThreadLocalRandom.current().nextInt(1, 6 + (GroepPanel.getGroup() -3) * 13);
-        this.secondArgument = ThreadLocalRandom.current().nextInt(1, 3 + (GroepPanel.getGroup() - 3) * 11);
+        this.firstArgument = ThreadLocalRandom.current().nextInt(1, 6 + (GroepPaneel.getGroup() - 3) * 13);
+        this.secondArgument = ThreadLocalRandom.current().nextInt(1, 3 + (GroepPaneel.getGroup() - 3) * 11);
         this.answer = this.firstArgument + this.secondArgument;
     }
 
     protected void initVermenigvuldigenQuestion() {
-        this.firstArgument = ThreadLocalRandom.current().nextInt(1, 4 + (GroepPanel.getGroup() -3) * 4);
-        this.secondArgument = ThreadLocalRandom.current().nextInt(1, 3 + (GroepPanel.getGroup() -3) * 3);
+        this.firstArgument = ThreadLocalRandom.current().nextInt(1, 4 + (GroepPaneel.getGroup() - 3) * 4);
+        this.secondArgument = ThreadLocalRandom.current().nextInt(1, 3 + (GroepPaneel.getGroup() - 3) * 3);
         this.answer = this.firstArgument * this.secondArgument;
     }
 
     protected void initDelenQuestion() {
-        int a = ThreadLocalRandom.current().nextInt(2, 1 + GroepPanel.getGroup());
-        int b = ThreadLocalRandom.current().nextInt(2, 1 + GroepPanel.getGroup());
+        int a = ThreadLocalRandom.current().nextInt(2, 1 + GroepPaneel.getGroup());
+        int b = ThreadLocalRandom.current().nextInt(2, 1 + GroepPaneel.getGroup());
         int r = a * b;
 
         this.firstArgument = r;
@@ -182,8 +248,8 @@ public abstract class OefeningFrame extends JFrame {
     protected void initAftrekkenQuestion() {
         this.getRootPane().setDefaultButton(this.nextButton);
         this.nextButton.requestFocus();
-        this.firstArgument = ThreadLocalRandom.current().nextInt(1, 6 + (GroepPanel.getGroup() -3) * 20);
-        this.secondArgument = ThreadLocalRandom.current().nextInt(1, 6 + (GroepPanel.getGroup() - 3) * 20);
+        this.firstArgument = ThreadLocalRandom.current().nextInt(1, 6 + (GroepPaneel.getGroup() - 3) * 20);
+        this.secondArgument = ThreadLocalRandom.current().nextInt(1, 6 + (GroepPaneel.getGroup() - 3) * 20);
 
         if (this.firstArgument < this.secondArgument) {
             // draai de waarden om zonder een extra variabel te gebruiken...

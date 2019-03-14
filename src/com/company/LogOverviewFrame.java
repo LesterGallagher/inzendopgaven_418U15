@@ -1,18 +1,20 @@
 package com.company;
 
 import javax.swing.*;
-import javax.swing.border.EmptyBorder;
-import javax.swing.event.TableModelListener;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableModel;
-import java.awt.*;
-import java.awt.event.WindowEvent;
 import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
-import java.util.ResourceBundle;
 
+/**
+ * Het logboek frame.
+ * Deze frame laat een tabel zien met alle resultaten van de afgelopen sessies.
+ * @author Sem Postma
+ */
 public class LogOverviewFrame extends JFrame {
+    /**
+     * De verwijzing naar het tabel.
+     */
     JTable table;
 
     public LogOverviewFrame() {
@@ -32,15 +34,15 @@ public class LogOverviewFrame extends JFrame {
         DateFormat dateTimeFormat = DateFormat.getDateTimeInstance(DateFormat.DEFAULT, DateFormat.DEFAULT, locale);
         for (int i = 0; i < sessies.size(); i++) {
             RekenTrainSessie sessie = sessies.get(i);
-            columnData[i][0] =  dateTimeFormat.format(new Date(sessie.timestamp));
+            columnData[i][0] = dateTimeFormat.format(new Date(sessie.tijdstempel));
             columnData[i][1] = sessie.operationName;
             columnData[i][2] = sessie.getFileName();
-            columnData[i][3] = "" + sessie.todo;
-            columnData[i][4] = "" + sessie.done;
-            columnData[i][5] = "" + sessie.mistakes;
-            columnData[i][6] = "" + (sessie.mistakes + sessie.todo + sessie.done);
+            columnData[i][3] = "" + sessie.teMaken;
+            columnData[i][4] = "" + sessie.afgerond;
+            columnData[i][5] = "" + sessie.fouten;
+            columnData[i][6] = "" + (sessie.fouten + sessie.teMaken + sessie.afgerond);
             columnData[i][7] = sessie.percentage + "%";
-            columnData[i][8] = sessie.seconds / 60 + " min. " + sessie.seconds % 60 + " sec";
+            columnData[i][8] = sessie.secondes / 60 + " min. " + sessie.secondes % 60 + " sec";
         }
         table = new JTable(columnData, columnNames);
         DefaultTableModel tableModel = new DefaultTableModel(columnData, columnNames) {

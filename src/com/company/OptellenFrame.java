@@ -1,17 +1,19 @@
 package com.company;
 
-import javax.swing.*;
-import java.util.concurrent.ThreadLocalRandom;
-
+/**
+ * Een OefeningFrame voor optel sommen.
+ * @author Sem Postma
+ */
 public class OptellenFrame extends OefeningFrame {
     public OptellenFrame() {
-        setIconImage(new AppIcon("/optellen-icon.png").getImage());
+        setIconImage(new AppIcoontje("/optellen-icon.png").getImage());
 
         operator = '+';
         operationName = "Optellen";
     }
+
     /**
-     * initialiseert een nieuwe vraag.
+     * Initialiseert een nieuwe vraag.
      */
     protected void newQuestion() {
         initOptellenQuestion();

@@ -1,0 +1,158 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: LogItemFrame</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">com.company</a> ]
+</div>
+
+<h1>Coverage Summary for Class: LogItemFrame (com.company)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">LogItemFrame</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 51)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package com.company;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import javax.swing.*;
+<i>4</i>&nbsp;import javax.swing.border.Border;
+<i>5</i>&nbsp;import java.text.DateFormat;
+<i>6</i>&nbsp;import java.util.Date;
+<i>7</i>&nbsp;import java.util.Locale;
+<i>8</i>&nbsp;
+<i>9</i>&nbsp;/**
+<i>10</i>&nbsp; * De frame die extra informatie over een sessie weergeeft zoals de antwoorden op de individuele sommen van elke opdarcht.
+<i>11</i>&nbsp; * @author Sem Postma
+<i>12</i>&nbsp; */
+<i>13</i>&nbsp;public class LogItemFrame extends JFrame {
+<b class="nc"><i>14</i>&nbsp;    public LogItemFrame(RekenTrainSessie sessie) {</b>
+<b class="nc"><i>15</i>&nbsp;        setTitle(&quot;Log Item&quot;);</b>
+<i>16</i>&nbsp;
+<b class="nc"><i>17</i>&nbsp;        Locale locale = new Locale(&quot;nl&quot;, &quot;NL&quot;);</b>
+<b class="nc"><i>18</i>&nbsp;        DateFormat dateTimeFormat = DateFormat.getDateTimeInstance(DateFormat.DEFAULT, DateFormat.DEFAULT, locale);</b>
+<i>19</i>&nbsp;
+<b class="nc"><i>20</i>&nbsp;        JPanel contentPane = new JPanel();</b>
+<b class="nc"><i>21</i>&nbsp;        contentPane.setLayout(new BoxLayout(contentPane, BoxLayout.PAGE_AXIS));</b>
+<b class="nc"><i>22</i>&nbsp;        JScrollPane scrollPane = new JScrollPane(contentPane);</b>
+<b class="nc"><i>23</i>&nbsp;        scrollPane.getVerticalScrollBar().setUnitIncrement(16);</b>
+<b class="nc"><i>24</i>&nbsp;        getContentPane().add(scrollPane);</b>
+<i>25</i>&nbsp;
+<b class="nc"><i>26</i>&nbsp;        Border padding = BorderFactory.createEmptyBorder(10, 10, 10, 10);</b>
+<b class="nc"><i>27</i>&nbsp;        contentPane.setBorder(padding);</b>
+<i>28</i>&nbsp;
+<b class="nc"><i>29</i>&nbsp;        JLabel title = new JLabel(&quot;Opdracht:&quot;);</b>
+<b class="nc"><i>30</i>&nbsp;        title.setFont(title.getFont().deriveFont(30f));</b>
+<b class="nc"><i>31</i>&nbsp;        contentPane.add(title);</b>
+<b class="nc"><i>32</i>&nbsp;        contentPane.add(Box.createVerticalStrut(15));</b>
+<b class="nc"><i>33</i>&nbsp;        JLabel tijdstipLabel = new JLabel(&quot;Tijdstip: &quot; + dateTimeFormat.format(new Date(sessie.tijdstempel)));</b>
+<b class="nc"><i>34</i>&nbsp;        contentPane.add(tijdstipLabel);</b>
+<b class="nc"><i>35</i>&nbsp;        JLabel operationLabel = new JLabel(&quot;Opdracht: &quot; + sessie.operationName);</b>
+<b class="nc"><i>36</i>&nbsp;        contentPane.add(operationLabel);</b>
+<b class="nc"><i>37</i>&nbsp;        JLabel fileNameLabel = new JLabel(&quot;Bestandsnaam: &quot; + sessie.getFileName());</b>
+<b class="nc"><i>38</i>&nbsp;        contentPane.add(fileNameLabel);</b>
+<b class="nc"><i>39</i>&nbsp;        JLabel todoLabel = new JLabel(&quot;Niet gemaakt: &quot; + sessie.teMaken);</b>
+<b class="nc"><i>40</i>&nbsp;        contentPane.add(todoLabel);</b>
+<b class="nc"><i>41</i>&nbsp;        JLabel doneLabel = new JLabel(&quot;Goed: &quot; + sessie.afgerond);</b>
+<b class="nc"><i>42</i>&nbsp;        contentPane.add(doneLabel);</b>
+<b class="nc"><i>43</i>&nbsp;        JLabel mistakesLabel = new JLabel(&quot;Fout: &quot; + sessie.fouten);</b>
+<b class="nc"><i>44</i>&nbsp;        contentPane.add(mistakesLabel);</b>
+<b class="nc"><i>45</i>&nbsp;        JLabel totaalLabel = new JLabel(&quot;Totaal: &quot; + (sessie.teMaken + sessie.fouten + sessie.afgerond));</b>
+<b class="nc"><i>46</i>&nbsp;        contentPane.add(totaalLabel);</b>
+<b class="nc"><i>47</i>&nbsp;        JLabel percentageLabel = new JLabel(&quot;Percentage: &quot; + sessie.percentage + &quot;%&quot;);</b>
+<b class="nc"><i>48</i>&nbsp;        contentPane.add(percentageLabel);</b>
+<b class="nc"><i>49</i>&nbsp;        JLabel tijdLabel = new JLabel(&quot;Tijd: &quot; + sessie.secondes / 60 + &quot; min &quot; + sessie.secondes % 60 + &quot; sec&quot;);</b>
+<b class="nc"><i>50</i>&nbsp;        contentPane.add(tijdLabel);</b>
+<i>51</i>&nbsp;
+<b class="nc"><i>52</i>&nbsp;        contentPane.add(Box.createVerticalStrut(15));</b>
+<i>53</i>&nbsp;
+<b class="nc"><i>54</i>&nbsp;        for (RekenTrainSessieItem item : sessie.items) {</b>
+<b class="nc"><i>55</i>&nbsp;            contentPane.add(Box.createVerticalStrut(15));</b>
+<b class="nc"><i>56</i>&nbsp;            JLabel vraag = new JLabel(&quot;Wat is &quot;</b>
+<i>57</i>&nbsp;                    + item.firstArgument + &quot; &quot;
+<i>58</i>&nbsp;                    + item.operator + &quot; &quot;
+<i>59</i>&nbsp;                    + item.secondArgument + &quot;?&quot;);
+<b class="nc"><i>60</i>&nbsp;            vraag.setFont(vraag.getFont().deriveFont(18f));</b>
+<b class="nc"><i>61</i>&nbsp;            contentPane.add(vraag);</b>
+<b class="nc"><i>62</i>&nbsp;            boolean isCorrect = item.userAnswer == item.answer;</b>
+<b class="nc"><i>63</i>&nbsp;            String text = isCorrect</b>
+<b class="nc"><i>64</i>&nbsp;                    ? &quot;Goed! het antwoord was: &quot; + item.answer</b>
+<b class="nc"><i>65</i>&nbsp;                    : &quot;Fout... jouw antwoord was: &quot; + item.userAnswer + &quot; maar het goede antwoord was: &quot; + item.answer;</b>
+<b class="nc"><i>66</i>&nbsp;            JLabel antwoordLabel = new JLabel(text);</b>
+<b class="nc"><i>67</i>&nbsp;            contentPane.add(antwoordLabel);</b>
+<b class="nc"><i>68</i>&nbsp;        }</b>
+<i>69</i>&nbsp;
+<b class="nc"><i>70</i>&nbsp;        setSize(800, 500);</b>
+<b class="nc"><i>71</i>&nbsp;        validate();</b>
+<b class="nc"><i>72</i>&nbsp;        repaint();</b>
+<b class="nc"><i>73</i>&nbsp;        setLocationRelativeTo(null);</b>
+<b class="nc"><i>74</i>&nbsp;    }</b>
+<i>75</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2019-03-11 18:02</div>
+</div>
+</body>
+</html>

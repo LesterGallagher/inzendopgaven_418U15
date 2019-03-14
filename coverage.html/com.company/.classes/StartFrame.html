@@ -1,0 +1,213 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: StartFrame</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">com.company</a> ]
+</div>
+
+<h1>Coverage Summary for Class: StartFrame (com.company)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">StartFrame</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    40%
+  </span>
+  <span class="absValue">
+    (2/ 5)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    3,2%
+  </span>
+  <span class="absValue">
+    (2/ 62)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package com.company;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import javax.swing.*;
+<i>4</i>&nbsp;import javax.swing.border.Border;
+<i>5</i>&nbsp;import java.awt.*;
+<i>6</i>&nbsp;import java.awt.event.ActionListener;
+<i>7</i>&nbsp;
+<i>8</i>&nbsp;/**
+<i>9</i>&nbsp; * Het startscherm van de applicatie.
+<i>10</i>&nbsp; * @author Sem Postma
+<i>11</i>&nbsp; */
+<i>12</i>&nbsp;public class StartFrame extends JFrame {
+<i>13</i>&nbsp;
+<i>14</i>&nbsp;    /**
+<i>15</i>&nbsp;     * Het aantal rotaties voordat een sessie is afgerond.
+<i>16</i>&nbsp;     */
+<b class="fc"><i>17</i>&nbsp;    private static int rotaties = 20;</b>
+<i>18</i>&nbsp;    /**
+<i>19</i>&nbsp;     * Het paneel met de inhoud.
+<i>20</i>&nbsp;     */
+<b class="nc"><i>21</i>&nbsp;    protected JPanel inhoudPaneel = new JPanel(new BorderLayout());</b>
+<i>22</i>&nbsp;    /**
+<i>23</i>&nbsp;     * Het paneel met de knoppen.
+<i>24</i>&nbsp;     */
+<b class="nc"><i>25</i>&nbsp;    protected JPanel knoppenPaneel = new JPanel();</b>
+<i>26</i>&nbsp;    /**
+<i>27</i>&nbsp;     * De frame met de optelsommen.
+<i>28</i>&nbsp;     */
+<b class="nc"><i>29</i>&nbsp;    protected OptellenFrame optellenFrame = new OptellenFrame();</b>
+<i>30</i>&nbsp;    /**
+<i>31</i>&nbsp;     * De frame met de minsommen.
+<i>32</i>&nbsp;     */
+<b class="nc"><i>33</i>&nbsp;    protected MinSommenFrame minSommenFrame = new MinSommenFrame();</b>
+<i>34</i>&nbsp;    /**
+<i>35</i>&nbsp;     * De frame met de vermenigvuldiging opdrachten.
+<i>36</i>&nbsp;     */
+<b class="nc"><i>37</i>&nbsp;    protected VermenigvuldigenFrame vermenigvuldigenFrame = new VermenigvuldigenFrame();</b>
+<i>38</i>&nbsp;    /**
+<i>39</i>&nbsp;     * De frame met de deelsommen.
+<i>40</i>&nbsp;     */
+<b class="nc"><i>41</i>&nbsp;    protected DelenFrame delenFrame = new DelenFrame();</b>
+<i>42</i>&nbsp;    /**
+<i>43</i>&nbsp;     * De frame met de willekeurige opdrachten.
+<i>44</i>&nbsp;     */
+<b class="nc"><i>45</i>&nbsp;    protected WillekeurigFrame willekeurigFrame = new WillekeurigFrame();</b>
+<i>46</i>&nbsp;    /**
+<i>47</i>&nbsp;     * De label met het aaantal opdrachten.
+<i>48</i>&nbsp;     */
+<b class="nc"><i>49</i>&nbsp;    protected JLabel aantalOpdrachten = new JLabel(&quot;Hoeveel sommen wil je maken?&quot;);</b>
+<i>50</i>&nbsp;    /**
+<i>51</i>&nbsp;     * Het tekstveld met het aantal opdrachten.
+<i>52</i>&nbsp;     */
+<b class="nc"><i>53</i>&nbsp;    protected JTextField aantalOpdrachtenVeld = new JTextField(&quot;20&quot;);</b>
+<i>54</i>&nbsp;
+<b class="nc"><i>55</i>&nbsp;    public StartFrame() {</b>
+<b class="nc"><i>56</i>&nbsp;        setTitle(&quot;Rekentrainer Keuze scherm&quot;);</b>
+<b class="nc"><i>57</i>&nbsp;        setSize(900, 600);</b>
+<b class="nc"><i>58</i>&nbsp;        setLocationRelativeTo(null);</b>
+<b class="nc"><i>59</i>&nbsp;        setDefaultCloseOperation(EXIT_ON_CLOSE);</b>
+<b class="nc"><i>60</i>&nbsp;        setIconImage(new AppIcoontje(&quot;/icon.png&quot;).getImage());</b>
+<b class="nc"><i>61</i>&nbsp;        setJMenuBar(new StartFrameMenu(this));</b>
+<i>62</i>&nbsp;
+<b class="nc"><i>63</i>&nbsp;        Border padding = BorderFactory.createEmptyBorder(10, 10, 10, 10);</b>
+<b class="nc"><i>64</i>&nbsp;        inhoudPaneel.setBorder(padding);</b>
+<i>65</i>&nbsp;
+<b class="nc"><i>66</i>&nbsp;        JPanel boxPane = new JPanel();</b>
+<b class="nc"><i>67</i>&nbsp;        boxPane.setLayout(new BoxLayout(boxPane, BoxLayout.Y_AXIS));</b>
+<b class="nc"><i>68</i>&nbsp;        JLabel label = new JLabel(&quot;Rekentrainer jenaplanbasisschool De Fuglen.&quot;);</b>
+<b class="nc"><i>69</i>&nbsp;        label.setFont(label.getFont().deriveFont(28.0f));</b>
+<b class="nc"><i>70</i>&nbsp;        JLabel textExplanation = new JLabel(&quot;Klik op een van de knoppen hier onder om de opdracht te beginnen.&quot;);</b>
+<b class="nc"><i>71</i>&nbsp;        textExplanation.setFont(textExplanation.getFont().deriveFont(16.0f));</b>
+<b class="nc"><i>72</i>&nbsp;        boxPane.add(label);</b>
+<b class="nc"><i>73</i>&nbsp;        boxPane.add(textExplanation);</b>
+<b class="nc"><i>74</i>&nbsp;        boxPane.add(Box.createVerticalStrut(20));</b>
+<b class="nc"><i>75</i>&nbsp;        boxPane.add(aantalOpdrachten);</b>
+<b class="nc"><i>76</i>&nbsp;        aantalOpdrachten.setFont(aantalOpdrachten.getFont().deriveFont(20.0f));</b>
+<b class="nc"><i>77</i>&nbsp;        boxPane.add(aantalOpdrachtenVeld);</b>
+<b class="nc"><i>78</i>&nbsp;        aantalOpdrachtenVeld.setFont(aantalOpdrachtenVeld.getFont().deriveFont(14.0f));</b>
+<b class="nc"><i>79</i>&nbsp;        aantalOpdrachtenVeld.getDocument().addDocumentListener(new JTextFieldDocumentChangeListener(e -&gt; {</b>
+<i>80</i>&nbsp;            try {
+<b class="nc"><i>81</i>&nbsp;                rotaties = Integer.parseInt(aantalOpdrachtenVeld.getText());</b>
+<b class="nc"><i>82</i>&nbsp;            } catch (NumberFormatException err) {</b>
+<b class="nc"><i>83</i>&nbsp;            }</b>
+<b class="nc"><i>84</i>&nbsp;        }));</b>
+<b class="nc"><i>85</i>&nbsp;        boxPane.add(Box.createVerticalStrut(20));</b>
+<b class="nc"><i>86</i>&nbsp;        inhoudPaneel.add(boxPane, BorderLayout.NORTH);</b>
+<i>87</i>&nbsp;
+<b class="nc"><i>88</i>&nbsp;        knoppenPaneel.setLayout(new GridBagLayout());</b>
+<i>89</i>&nbsp;
+<i>90</i>&nbsp;        // add menu buttons
+<b class="nc"><i>91</i>&nbsp;        addButton(&quot;/optellen.png&quot;, new StartFrameKnopKlikActionListener(optellenFrame));</b>
+<b class="nc"><i>92</i>&nbsp;        addButton(&quot;/aftrekken.png&quot;, new StartFrameKnopKlikActionListener(minSommenFrame));</b>
+<b class="nc"><i>93</i>&nbsp;        addButton(&quot;/vermenigvuldigen.png&quot;, new StartFrameKnopKlikActionListener(vermenigvuldigenFrame));</b>
+<b class="nc"><i>94</i>&nbsp;        addButton(&quot;/delen.png&quot;, new StartFrameKnopKlikActionListener(delenFrame));</b>
+<b class="nc"><i>95</i>&nbsp;        addButton(&quot;/willekeurig.png&quot;, new StartFrameKnopKlikActionListener(willekeurigFrame));</b>
+<i>96</i>&nbsp;
+<b class="nc"><i>97</i>&nbsp;        inhoudPaneel.add(knoppenPaneel, BorderLayout.SOUTH);</b>
+<i>98</i>&nbsp;
+<b class="nc"><i>99</i>&nbsp;        GroepPaneel groepPanel = new GroepPaneel();</b>
+<b class="nc"><i>100</i>&nbsp;        groepPanel.setAlignmentX(Component.LEFT_ALIGNMENT);</b>
+<b class="nc"><i>101</i>&nbsp;        inhoudPaneel.add(groepPanel, BorderLayout.CENTER);</b>
+<i>102</i>&nbsp;
+<b class="nc"><i>103</i>&nbsp;        add(inhoudPaneel);</b>
+<b class="nc"><i>104</i>&nbsp;    }</b>
+<i>105</i>&nbsp;
+<i>106</i>&nbsp;    /**
+<i>107</i>&nbsp;     * Verkrijg het aantal rotaties.
+<i>108</i>&nbsp;     * @return Het aantal rotaties.
+<i>109</i>&nbsp;     */
+<i>110</i>&nbsp;    public static int getRotaties() {
+<b class="fc"><i>111</i>&nbsp;        return rotaties;</b>
+<i>112</i>&nbsp;    }
+<i>113</i>&nbsp;
+<i>114</i>&nbsp;    /**
+<i>115</i>&nbsp;     * Voeg een knop toe aan het start scherm.
+<i>116</i>&nbsp;     * @param imageName De naam van de afbeelding in de resource folder.
+<i>117</i>&nbsp;     * @param listener De listener voor wanneer er op de knop geklikt wordt.
+<i>118</i>&nbsp;     */
+<i>119</i>&nbsp;    protected void addButton(String imageName, ActionListener listener) {
+<b class="nc"><i>120</i>&nbsp;        JButton btn = new JButton();</b>
+<b class="nc"><i>121</i>&nbsp;        btn.setIcon(new AppIcoontje(imageName).getIcon());</b>
+<b class="nc"><i>122</i>&nbsp;        btn.setContentAreaFilled(false);</b>
+<b class="nc"><i>123</i>&nbsp;        btn.setFocusable(false);</b>
+<b class="nc"><i>124</i>&nbsp;        btn.addActionListener(listener);</b>
+<b class="nc"><i>125</i>&nbsp;        btn.setBorder(BorderFactory.createLineBorder(Color.red, 2)); // Line Border + Thickness of the Border</b>
+<b class="nc"><i>126</i>&nbsp;        GridBagConstraints gbc = new GridBagConstraints();</b>
+<b class="nc"><i>127</i>&nbsp;        gbc.insets = new Insets(5, 5, 5, 5);</b>
+<b class="nc"><i>128</i>&nbsp;        knoppenPaneel.add(btn, gbc);</b>
+<b class="nc"><i>129</i>&nbsp;    }</b>
+<i>130</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2019-03-11 18:02</div>
+</div>
+</body>
+</html>

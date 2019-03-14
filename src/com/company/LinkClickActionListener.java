@@ -1,25 +1,33 @@
 package com.company;
 
-import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.nio.file.Paths;
 
 
+/**
+ * Een link klik listener voor het start scherm.
+ * @author Sem Postma
+ */
 public class LinkClickActionListener implements ActionListener {
 
-    protected Home home;
+    /**
+     * Een verwijzing naar het start frame.
+     */
+    protected StartFrame startFrame;
+    /**
+     * De url van de link.
+     */
     protected String url;
 
-    public LinkClickActionListener(Home home, String url) {
-        this.home = home;
+    public LinkClickActionListener(StartFrame startFrame, String url) {
+        this.startFrame = startFrame;
         this.url = url;
     }
 
     /**
-     * Handles the documentation menu item click event.
-    */
+     * Deze methode wordt aangeroepen wanneer de leerling op het menu itm klikt.
+     */
     @Override
     public void actionPerformed(ActionEvent e) {
         if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {

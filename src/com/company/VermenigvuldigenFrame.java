@@ -1,18 +1,19 @@
 package com.company;
 
-import javax.swing.*;
-import java.util.concurrent.ThreadLocalRandom;
-
+/**
+ * De frame voor Vermenigvuldigings opdrachten.
+ * @author Sem Postma
+ */
 public class VermenigvuldigenFrame extends OefeningFrame {
     public VermenigvuldigenFrame() {
-        setIconImage(new AppIcon("/vermenigvuldigen-icon.png").getImage());
+        setIconImage(new AppIcoontje("/vermenigvuldigen-icon.png").getImage());
 
         operator = 'x';
         operationName = "Vermenigvuldigen";
     }
 
     /**
-     * initialiseert een nieuwe vraag.
+     * Initialiseert een nieuwe vraag.
      */
     protected void newQuestion() {
         initVermenigvuldigenQuestion();

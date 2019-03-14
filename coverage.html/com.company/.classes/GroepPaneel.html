@@ -1,0 +1,131 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: GroepPaneel</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">com.company</a> ]
+</div>
+
+<h1>Coverage Summary for Class: GroepPaneel (com.company)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">GroepPaneel</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/ 3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (19/ 19)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package com.company;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import javax.swing.*;
+<i>4</i>&nbsp;import java.text.MessageFormat;
+<i>5</i>&nbsp;
+<i>6</i>&nbsp;/**
+<i>7</i>&nbsp; * Het eerste paneel van de applicatie.
+<i>8</i>&nbsp; * Hier kan de leerling de groep aankiezen.
+<i>9</i>&nbsp; * @author Sem Postma
+<i>10</i>&nbsp; */
+<i>11</i>&nbsp;public class GroepPaneel extends JPanel {
+<i>12</i>&nbsp;
+<i>13</i>&nbsp;    /**
+<i>14</i>&nbsp;     * Het statische variabel voor de groep van de leerling.
+<i>15</i>&nbsp;     */
+<b class="fc"><i>16</i>&nbsp;    private static int group = 3;</b>
+<i>17</i>&nbsp;    /**
+<i>18</i>&nbsp;     * De label &quot;Kies je groep:&quot; label.
+<i>19</i>&nbsp;     */
+<b class="fc"><i>20</i>&nbsp;    private JLabel groepLabel = new JLabel(&quot;Kies je groep:&quot;);</b>
+<i>21</i>&nbsp;
+<b class="fc"><i>22</i>&nbsp;    public GroepPaneel() {</b>
+<b class="fc"><i>23</i>&nbsp;        groepLabel.setFont(groepLabel.getFont().deriveFont(20.0f));</b>
+<b class="fc"><i>24</i>&nbsp;        this.add(groepLabel);</b>
+<b class="fc"><i>25</i>&nbsp;        this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));</b>
+<b class="fc"><i>26</i>&nbsp;        ButtonGroup buttonGroup = new ButtonGroup();</b>
+<b class="fc"><i>27</i>&nbsp;        for (int i = 3; i &lt;= 8; i++) {</b>
+<b class="fc"><i>28</i>&nbsp;            int g = i;</b>
+<b class="fc"><i>29</i>&nbsp;            var radio = new JRadioButton(</b>
+<b class="fc"><i>30</i>&nbsp;                    MessageFormat.format(&quot;Groep {0}&quot;, g)</b>
+<i>31</i>&nbsp;            );
+<b class="fc"><i>32</i>&nbsp;            radio.addActionListener(e -&gt; group = g);</b>
+<b class="fc"><i>33</i>&nbsp;            buttonGroup.add(radio);</b>
+<b class="fc"><i>34</i>&nbsp;            add(radio);</b>
+<i>35</i>&nbsp;        }
+<b class="fc"><i>36</i>&nbsp;        buttonGroup.setSelected(buttonGroup.getElements().nextElement().getModel(), true);</b>
+<b class="fc"><i>37</i>&nbsp;        revalidate();</b>
+<b class="fc"><i>38</i>&nbsp;        repaint();</b>
+<b class="fc"><i>39</i>&nbsp;    }</b>
+<i>40</i>&nbsp;
+<i>41</i>&nbsp;    /**
+<i>42</i>&nbsp;     * Krijgt de groep van de leerling. De standaard waarde is 3.
+<i>43</i>&nbsp;     * @return De groep van de leerling
+<i>44</i>&nbsp;     */
+<i>45</i>&nbsp;    public static int getGroup() {
+<b class="fc"><i>46</i>&nbsp;        return group;</b>
+<i>47</i>&nbsp;    }
+<i>48</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2019-03-11 18:02</div>
+</div>
+</body>
+</html>

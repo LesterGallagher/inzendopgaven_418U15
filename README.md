@@ -4,6 +4,8 @@ Download het exe bestand: [FuglenRekentrainer.exe](https://esstudio.site/inzendo
 
 Download het exe bestand als een zip: [FuglenRekentrainer.zip](https://esstudio.site/inzendopgaven_418U15/out/exe/FuglenRekentrainer.zip)
 
+Download de source: [Source](https://github.com/LesterGallagher/inzendopgaven_418U15/zipball/master)
+
 ## Vereisten
 
 - java versie "1.8" of later
@@ -19,7 +21,7 @@ Nadat dit klaar is, open de folder en open het in uw IDE naar keus (getest in In
 
 ## Documentatie
 
-De documentatie voor dit project is [hier](https://esstudio.site/inzendopgaven_418U15/java-doc) te vinden.
+De documentatie voor dit project is [hier](https://esstudio.site/inzendopgaven_418U15/doc) te vinden.
 
 ## Applicatie vrijgeven
 
@@ -43,7 +45,7 @@ Documentatie voor jsign: [https://ebourg.github.io/jsign](http://launch4j.source
 ## Foutopsporing
 
 #### error: Could not find or load main class com.company.Main:
-Probeer het project opnieuw te bouwen. In intelliJ: Build -> Rebuild Project.
+Probeer het project opnieuw te bouwen. In intelliJ: Build -> Rebuild Project en Build -> Build Artifacts.
 
 Als dat niet werkt: [stackoverflow](https://stackoverflow.com/questions/10654120/error-could-not-find-or-load-main-class-in-intellij-ide)
 
