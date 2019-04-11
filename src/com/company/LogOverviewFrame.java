@@ -62,8 +62,13 @@ public class LogOverviewFrame extends JFrame {
                 int row = table.rowAtPoint(evt.getPoint());
                 int col = table.columnAtPoint(evt.getPoint());
                 if (row >= 0 && col >= 0) {
-                    LogItemFrame frame = new LogItemFrame(
-                            RekenTrainSessie.fetchWithItems(sessies.get(row)));
+                    var sessie = RekenTrainSessie.fetchWithItems(sessies.get(row));
+                    if (sessie == null) {
+                        JOptionPane.showMessageDialog(null,
+                                "Het is niet gelukt om het bestand '" + sessies.get(row).getFileName() + "' te openen...");
+                        return;
+                    }
+                    LogItemFrame frame = new LogItemFrame(sessie);
                     frame.setVisible(true);
                 }
             }

@@ -1,5 +1,8 @@
 package com.company;
 
+import com.company.FinalStats;
+import com.company.StatsPaneel;
+import com.company.WillekeurigFrame;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;

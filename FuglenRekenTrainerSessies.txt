@@ -2,3 +2,4 @@
 1551984491971 Willekeurig C:\Users\HP\FuglenRekentrainer/Sessie-1551984491971.xml 15 5 0 100 22
 1551984889827 Optellen C:\Users\HP\FuglenRekentrainer/Sessie-1551984889827.xml 0 3 17 15 10
 1552302766872 Optellen C:\Users\HP\FuglenRekentrainer/Sessie-1552302766872.xml 0 1 0 100 7
+1552577582287 Optellen C:\Users\HP\FuglenRekentrainer/Sessie-1552577582287.xml 0 2 1 67 7

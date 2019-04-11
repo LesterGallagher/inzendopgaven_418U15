@@ -1,5 +1,8 @@
 package com.company;
 
+import com.company.Helpers;
+import com.company.LoginScherm;
+import com.company.Main;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

@@ -36,7 +36,7 @@ De documentatie voor dit project is [hier](https://esstudio.site/inzendopgaven_4
 1. Installeer Apache Ant ([instructies](https://www.mkyong.com/ant/how-to-install-apache-ant-on-windows/))
 2. Installeer launch4j en voeg het toe aan het PATH omgevingsvariabel ([download](https://sourceforge.net/projects/launch4j/files/launch4j-3/3.12))
 3. Installeer jsign-2.1.jar en voeg het toe aan het PATH omgevingsvariabel ([download](https://ebourg.github.io/jsign))
-4. **Run de "deploy" Ant task.**
+6. **Run de "deploy" Ant task.**
 
 Documentatie voor launch4j: [http://launch4j.sourceforge.net](http://launch4j.sourceforge.net)
 

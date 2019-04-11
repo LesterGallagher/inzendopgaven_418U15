@@ -69,7 +69,6 @@ public class RekenTrainSessie {
      * @return Een rekentrainersessie object met opdracht items.
      */
     public static RekenTrainSessie fetchWithItems(RekenTrainSessie sessieWithoutItems) {
-        long tijdstempel = sessieWithoutItems.tijdstempel;
         String bestandsNaam = userHomeFolder.getAbsolutePath() + '/' + sessieWithoutItems.getFileName();
         return fetch(bestandsNaam);
     }

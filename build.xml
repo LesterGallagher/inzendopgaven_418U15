@@ -1,4 +1,4 @@
-<project name="FuglenRekentrainer" basedir="." default="deploy">
+<project name="AntTasks" basedir=".">
     <description>
         De build file voor de rekentrainer.
     </description>
@@ -11,8 +11,6 @@
 
     <target name="deploy"
             description="get ready for deployment">
-        <delete dir="${exe}" />
-
         <signjar storetype="pkcs12" keystore=".keystore" storepass="${secret.password}"
                  alias="Rekentrainer" jar="${jar}/FuglenRekentrainer.jar" />
 
